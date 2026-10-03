@@ -1,0 +1,23 @@
+name: Mac Studio Local Config
+version: 1.0.0
+schema: v1
+
+models:
+  # Primary Local Chat / Edit model via Ollama
+  - name: Qwen3 Coder 30B (Local)
+    provider: ollama
+    model: qwen3-coder:30b
+    roles:
+      - chat
+      - edit
+    capabilities:
+      - tool_use
+
+# Model for fast inline grey-text code completions as you type
+tabAutocompleteModel:
+  provider: ollama
+  model: qwen2.5-coder:1.5b
+
+# Base MCP servers for agent capabilities
+mcpServers:
+  - uses: anthropic/memory-mcp

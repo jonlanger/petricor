@@ -1,0 +1,1202 @@
+[
+ {
+  "title": "Base tray",
+  "group": "Base",
+  "desc": "Zinc-plated steel tray; mounts deck posts, PSU and air handler. Ground bond point.",
+  "spec": "1.5 mm SECC",
+  "objects": [
+   "Base_tray"
+  ]
+ },
+ {
+  "title": "Anti-vibration foot",
+  "group": "Base",
+  "desc": "Silicone foot, Shore 40A \u2014 damps bench vibration during imaging.",
+  "spec": "",
+  "objects": [
+   "Foot_0",
+   "Foot_1",
+   "Foot_2",
+   "Foot_3"
+  ]
+ },
+ {
+  "title": "Thread-forming screw",
+  "group": "Base",
+  "desc": "M3.5 \u00d7 16 thread-forming screw (PT-style) from under the base into a moulded boss; heads sit on the underside, never on an A-surface. Confirm pilot and boss OD with the screw maker.",
+  "spec": "M3.5 \u00d7 16 PT, pilot \u00d82.9",
+  "objects": [
+   "Fastener_0",
+   "Fastener_1",
+   "Fastener_2",
+   "Fastener_3",
+   "Fastener_4",
+   "Fastener_5"
+  ]
+ },
+ {
+  "title": "Internal deck",
+  "group": "Base",
+  "desc": "Structural deck separating the dry electronics bay from the conditioned chamber.",
+  "spec": "",
+  "objects": [
+   "Deck_plate"
+  ]
+ },
+ {
+  "title": "Deck post",
+  "group": "Base",
+  "desc": "Folded steel standoff.",
+  "spec": "",
+  "objects": [
+   "Deck_post_0",
+   "Deck_post_1",
+   "Deck_post_2",
+   "Deck_post_3"
+  ]
+ },
+ {
+  "title": "Six-position carousel",
+  "group": "Carousel",
+  "desc": "Anodised aluminium turntable indexes each dish under the imaging head. Lifts out tool-free for cleaning.",
+  "spec": "\u00d8310 mm, 6 \u00d7 90 mm dishes",
+  "objects": [
+   "Carousel_plate"
+  ]
+ },
+ {
+  "title": "Position index",
+  "group": "Carousel",
+  "desc": "Laser-etched position numbers match the on-screen map.",
+  "spec": "",
+  "objects": [
+   "Pos_1",
+   "Pos_2",
+   "Pos_3",
+   "Pos_4",
+   "Pos_5",
+   "Pos_6"
+  ]
+ },
+ {
+  "title": "Quick-release knob",
+  "group": "Carousel",
+  "desc": "Knurled quarter-turn knob (30 flutes = \"rotate\") releases the carousel from the drive hub.",
+  "spec": "",
+  "objects": [
+   "Carousel_knob"
+  ]
+ },
+ {
+  "title": "Drive shaft",
+  "group": "Carousel",
+  "desc": "Ground stainless shaft through a sealed bearing.",
+  "spec": "",
+  "objects": [
+   "Drive_shaft"
+  ]
+ },
+ {
+  "title": "Sealed bearing",
+  "group": "Carousel",
+  "desc": "Lip-sealed bearing keeps humid chamber air out of the drive bay.",
+  "spec": "",
+  "objects": [
+   "Shaft_seal_housing"
+  ]
+ },
+ {
+  "title": "Drive pulley",
+  "group": "Carousel",
+  "desc": "GT2 60T pulley driven from a 16T motor pulley (1:3.75).",
+  "spec": "",
+  "objects": [
+   "Drive_pulley"
+  ]
+ },
+ {
+  "title": "Carousel stepper",
+  "group": "Carousel",
+  "desc": "NEMA 17 closed-loop stepper with magnetic encoder \u2014 detects a jammed dish and stops.",
+  "spec": "NEMA17, 0.9\u00b0, encoder",
+  "objects": [
+   "Stepper_motor",
+   "Stepper_cap_58",
+   "Stepper_cap_97"
+  ]
+ },
+ {
+  "title": "Motor pulley",
+  "group": "Carousel",
+  "desc": "GT2 16T",
+  "spec": "",
+  "objects": [
+   "Motor_pulley",
+   "Motor_shaft"
+  ]
+ },
+ {
+  "title": "GT2 belt",
+  "group": "Carousel",
+  "desc": "Glass-fibre reinforced timing belt.",
+  "spec": "",
+  "objects": [
+   "Drive_belt"
+  ]
+ },
+ {
+  "title": "Home sensor",
+  "group": "Carousel",
+  "desc": "Slotted optical switch homes the carousel on every start.",
+  "spec": "",
+  "objects": [
+   "Home_sensor"
+  ]
+ },
+ {
+  "title": "Motor bracket",
+  "group": "Carousel",
+  "desc": "",
+  "spec": "",
+  "objects": [
+   "Motor_bracket"
+  ]
+ },
+ {
+  "title": "Dish retainers",
+  "group": "Carousel",
+  "desc": "Three spring ball plungers per pocket hold the dish against the counterbore while the carousel indexes.",
+  "spec": "",
+  "objects": [
+   "Dish_retainers"
+  ]
+ },
+ {
+  "title": "Calibration target",
+  "group": "Carousel",
+  "desc": "Ceramic 4 \u00d7 4 colour/grey target imaged with every rotation, so white balance and exposure are corrected per frame.",
+  "spec": "",
+  "objects": [
+   "Calibration_target",
+   "Cal_patch_0",
+   "Cal_patch_1",
+   "Cal_patch_2",
+   "Cal_patch_3",
+   "Cal_patch_4",
+   "Cal_patch_5",
+   "Cal_patch_6",
+   "Cal_patch_7",
+   "Cal_patch_8",
+   "Cal_patch_9",
+   "Cal_patch_10",
+   "Cal_patch_11",
+   "Cal_patch_12",
+   "Cal_patch_13",
+   "Cal_patch_14",
+   "Cal_patch_15"
+  ]
+ },
+ {
+  "title": "Chamber liner",
+  "group": "Chamber",
+  "desc": "Electropolished 316L stainless with 15 mm coved corners and no internal fasteners, for straightforward wipe-down.",
+  "spec": "316L stainless",
+  "objects": [
+   "Chamber_liner"
+  ]
+ },
+ {
+  "title": "Laminar air baffle",
+  "group": "Chamber",
+  "desc": "Perforated rear plenum that spreads low-velocity airflow across all six dishes.",
+  "spec": "",
+  "objects": [
+   "Air_baffle",
+   "Air_plenum"
+  ]
+ },
+ {
+  "title": "Door gasket",
+  "group": "Chamber",
+  "desc": "Food-grade silicone D-profile seal.",
+  "spec": "",
+  "objects": [
+   "Door_gasket"
+  ]
+ },
+ {
+  "title": "Chamber trim",
+  "group": "Chamber",
+  "desc": "Moulded trim closing the chamber to the cover. Its R28.5 corner is concentric with the door's R34 hood, so the gap and gasket stay constant all the way round.",
+  "spec": "",
+  "objects": [
+   "Chamber_trim"
+  ]
+ },
+ {
+  "title": "Chamber light",
+  "group": "Chamber",
+  "desc": "Dimmable white LED bar for viewing dishes through the door; switched off automatically during imaging.",
+  "spec": "",
+  "objects": [
+   "Chamber_lightbar"
+  ]
+ },
+ {
+  "title": "Temp / RH probe",
+  "group": "Chamber",
+  "desc": "Digital temperature and humidity sensor behind a PTFE membrane, with an independent over-temperature sensor.",
+  "spec": "",
+  "objects": [
+   "THR_probe"
+  ]
+ },
+ {
+  "title": "PTFE filter cap",
+  "group": "Chamber",
+  "desc": "",
+  "spec": "",
+  "objects": [
+   "THR_probe_filter"
+  ]
+ },
+ {
+  "title": "UV-C decontamination bar",
+  "group": "Chamber",
+  "desc": "UV-C LED bar runs a surface decontamination cycle between experiments; door-interlocked.",
+  "spec": "275 nm LEDs",
+  "objects": [
+   "UVC_bar",
+   "UVC_led_0",
+   "UVC_led_1",
+   "UVC_led_2",
+   "UVC_led_3",
+   "UVC_led_4",
+   "UVC_led_5",
+   "UVC_led_6",
+   "UVC_led_7"
+  ]
+ },
+ {
+  "title": "Insulation panel",
+  "group": "Chamber",
+  "desc": "Moulded EPP bead foam that follows the rounded shell, so the thickened side walls are insulated right into the corners. The outboard face is dimpled: the dimples hold a still-air layer against the cover and act as crush points that take up cover tolerance. The smooth face seats on the liner.",
+  "spec": "EPP 45 g/L moulded bead foam, dimpled outer face (\u00d810 \u00d7 2.5 on 13 hex)",
+  "objects": [
+   "Insul_side_L",
+   "Insul_side_R",
+   "Insul_back",
+   "Insul_floor"
+  ]
+ },
+ {
+  "title": "Insulation blanket",
+  "group": "Chamber",
+  "desc": "Only 3.5 mm between the liner and the saddle ribs \u2014 too thin to mould in EPP, so the top uses a silica-aerogel blanket bonded to the liner.",
+  "spec": "3.5 mm silica aerogel blanket, PET-faced",
+  "objects": [
+   "Insul_top"
+  ]
+ },
+ {
+  "title": "Supply grille",
+  "group": "Chamber",
+  "desc": "Conditioned air from the Peltier stack enters high on the right wall and sweeps down across the carousel.",
+  "spec": "",
+  "objects": [
+   "Supply_grille",
+   "Supply_grille_duct"
+  ]
+ },
+ {
+  "title": "Return grille",
+  "group": "Chamber",
+  "desc": "Low return on the left wall closes the loop under the carousel, so air passes every dish at the same speed.",
+  "spec": "",
+  "objects": [
+   "Return_grille",
+   "Return_grille_duct"
+  ]
+ },
+ {
+  "title": "Mist outlet",
+  "group": "Chamber",
+  "desc": "Ultrasonic humidifier outlet, PP nozzle; condensate drains back to the reservoir.",
+  "spec": "",
+  "objects": [
+   "Mist_outlet",
+   "Mist_outlet_bore"
+  ]
+ },
+ {
+  "title": "Condensate drain",
+  "group": "Chamber",
+  "desc": "Slotted drain at the low corner of the coved floor returns condensate to the humidifier reservoir.",
+  "spec": "",
+  "objects": [
+   "Floor_drain",
+   "Floor_drain_sump"
+  ]
+ },
+ {
+  "title": "Rating etch",
+  "group": "Chamber",
+  "desc": "Laser-etched operating envelope on the chamber wall.",
+  "spec": "",
+  "objects": [
+   "Chamber_rating"
+  ]
+ },
+ {
+  "title": "Air handler",
+  "group": "Climate",
+  "desc": "Sealed duct: chamber air is pulled through the floor return, conditioned, HEPA-filtered and returned via the rear baffle.",
+  "spec": "",
+  "objects": [
+   "Air_handler_duct"
+  ]
+ },
+ {
+  "title": "Cold-side heat exchanger",
+  "group": "Climate",
+  "desc": "Inside the sealed duct; the Peltier heat pump can both heat and cool the chamber.",
+  "spec": "",
+  "objects": [
+   "Cold_side_heatsink"
+  ]
+ },
+ {
+  "title": "Peltier module",
+  "group": "Climate",
+  "desc": "Thermoelectric module \u2014 solid state, no refrigerant, reversible for heating.",
+  "spec": "2 \u00d7 60 W TEC",
+  "objects": [
+   "TEC_0",
+   "TEC_1"
+  ]
+ },
+ {
+  "title": "Hot-side heatsink",
+  "group": "Climate",
+  "desc": "Extruded aluminium sink exhausting through the rear grille.",
+  "spec": "",
+  "objects": [
+   "Hot_side_heatsink"
+  ]
+ },
+ {
+  "title": "Exhaust fan",
+  "group": "Climate",
+  "desc": "80 mm PWM fan, speed-controlled on hot-side temperature.",
+  "spec": "",
+  "objects": [
+   "Exhaust_fan_frame",
+   "Exhaust_fan_rotor"
+  ]
+ },
+ {
+  "title": "Recirculation blower",
+  "group": "Climate",
+  "desc": "Low-velocity centrifugal blower recirculating chamber air.",
+  "spec": "",
+  "objects": [
+   "Recirc_blower"
+  ]
+ },
+ {
+  "title": "PTC safety heater",
+  "group": "Climate",
+  "desc": "Self-limiting PTC element for warm-up.",
+  "spec": "",
+  "objects": [
+   "PTC_heater"
+  ]
+ },
+ {
+  "title": "HEPA filter",
+  "group": "Climate",
+  "desc": "H13 HEPA on the return air to capture airborne spores released by mature colonies.",
+  "spec": "H13",
+  "objects": [
+   "HEPA_cartridge",
+   "HEPA_media"
+  ]
+ },
+ {
+  "title": "Front console",
+  "group": "Console",
+  "desc": "Graphite PC console angled at 47.5\u00b0 so the screen and label printer face the operator at the bench.",
+  "spec": "PC/ABS, 3.0 mm wall, MT-11020 \u00b7 Graphite #141518",
+  "objects": [
+   "Console"
+  ]
+ },
+ {
+  "title": "Status light pipe",
+  "group": "Console",
+  "desc": "Run-state line along the foot of the console, readable across the lab and kept out of the finger scoop.",
+  "spec": "",
+  "objects": [
+   "Status_lightpipe"
+  ]
+ },
+ {
+  "title": "10.1\" touchscreen",
+  "group": "Console",
+  "desc": "Optically-bonded 10.1\" 1280\u00d7800 IPS with glove-mode capacitive touch and a chemically-strengthened cover glass.",
+  "spec": "10.1\" 1280\u00d7800, PCAP",
+  "objects": [
+   "Screen_coverglass"
+  ]
+ },
+ {
+  "title": "Display surface",
+  "group": "Console",
+  "desc": "Active area",
+  "spec": "",
+  "objects": [
+   "Screen_display"
+  ]
+ },
+ {
+  "title": "LCD module",
+  "group": "Console",
+  "desc": "Backlit IPS panel in steel frame.",
+  "spec": "",
+  "objects": [
+   "Screen_LCD_module"
+  ]
+ },
+ {
+  "title": "Display driver board",
+  "group": "Console",
+  "desc": "eDP/MIPI bridge + touch controller, FFC to compute module.",
+  "spec": "",
+  "objects": [
+   "Screen_driver_board"
+  ]
+ },
+ {
+  "title": "Dish 1",
+  "group": "Dishes",
+  "desc": "Standard 90 mm polystyrene Petri dish. Seats in a counterbored pocket that locates it under the camera.",
+  "spec": "",
+  "objects": [
+   "Dish_1_base"
+  ]
+ },
+ {
+  "title": "Dish 1 lid",
+  "group": "Dishes",
+  "desc": "",
+  "spec": "",
+  "objects": [
+   "Dish_1_lid"
+  ]
+ },
+ {
+  "title": "Dish 1 culture",
+  "group": "Dishes",
+  "desc": "Synthetic illustration of colony morphology used for rendering \u2014 not a photograph.",
+  "spec": "",
+  "objects": [
+   "Dish_1_agar",
+   "Dish_1_exudate",
+   "Dish_1_agar_body"
+  ]
+ },
+ {
+  "title": "Dish 1 barcode",
+  "group": "Dishes",
+  "desc": "Printed on-device, applied to the dish wall; the side scanner links it to the run.",
+  "spec": "",
+  "objects": [
+   "Dish_1_label"
+  ]
+ },
+ {
+  "title": "Dish 2",
+  "group": "Dishes",
+  "desc": "Standard 90 mm polystyrene Petri dish. Seats in a counterbored pocket that locates it under the camera.",
+  "spec": "",
+  "objects": [
+   "Dish_2_base"
+  ]
+ },
+ {
+  "title": "Dish 2 lid",
+  "group": "Dishes",
+  "desc": "",
+  "spec": "",
+  "objects": [
+   "Dish_2_lid"
+  ]
+ },
+ {
+  "title": "Dish 2 culture",
+  "group": "Dishes",
+  "desc": "Synthetic illustration of colony morphology used for rendering \u2014 not a photograph.",
+  "spec": "",
+  "objects": [
+   "Dish_2_agar",
+   "Dish_2_exudate",
+   "Dish_2_agar_body"
+  ]
+ },
+ {
+  "title": "Dish 2 barcode",
+  "group": "Dishes",
+  "desc": "Printed on-device, applied to the dish wall; the side scanner links it to the run.",
+  "spec": "",
+  "objects": [
+   "Dish_2_label"
+  ]
+ },
+ {
+  "title": "Dish 3",
+  "group": "Dishes",
+  "desc": "Standard 90 mm polystyrene Petri dish. Seats in a counterbored pocket that locates it under the camera.",
+  "spec": "",
+  "objects": [
+   "Dish_3_base"
+  ]
+ },
+ {
+  "title": "Dish 3 lid",
+  "group": "Dishes",
+  "desc": "",
+  "spec": "",
+  "objects": [
+   "Dish_3_lid"
+  ]
+ },
+ {
+  "title": "Dish 3 culture",
+  "group": "Dishes",
+  "desc": "Synthetic illustration of colony morphology used for rendering \u2014 not a photograph.",
+  "spec": "",
+  "objects": [
+   "Dish_3_agar",
+   "Dish_3_agar_body"
+  ]
+ },
+ {
+  "title": "Dish 3 barcode",
+  "group": "Dishes",
+  "desc": "Printed on-device, applied to the dish wall; the side scanner links it to the run.",
+  "spec": "",
+  "objects": [
+   "Dish_3_label"
+  ]
+ },
+ {
+  "title": "Dish 4",
+  "group": "Dishes",
+  "desc": "Standard 90 mm polystyrene Petri dish. Seats in a counterbored pocket that locates it under the camera.",
+  "spec": "",
+  "objects": [
+   "Dish_4_base"
+  ]
+ },
+ {
+  "title": "Dish 4 lid",
+  "group": "Dishes",
+  "desc": "",
+  "spec": "",
+  "objects": [
+   "Dish_4_lid"
+  ]
+ },
+ {
+  "title": "Dish 4 culture",
+  "group": "Dishes",
+  "desc": "Synthetic illustration of colony morphology used for rendering \u2014 not a photograph.",
+  "spec": "",
+  "objects": [
+   "Dish_4_agar",
+   "Dish_4_agar_body"
+  ]
+ },
+ {
+  "title": "Dish 4 barcode",
+  "group": "Dishes",
+  "desc": "Printed on-device, applied to the dish wall; the side scanner links it to the run.",
+  "spec": "",
+  "objects": [
+   "Dish_4_label"
+  ]
+ },
+ {
+  "title": "Dish 5",
+  "group": "Dishes",
+  "desc": "Standard 90 mm polystyrene Petri dish. Seats in a counterbored pocket that locates it under the camera.",
+  "spec": "",
+  "objects": [
+   "Dish_5_base"
+  ]
+ },
+ {
+  "title": "Dish 5 lid",
+  "group": "Dishes",
+  "desc": "",
+  "spec": "",
+  "objects": [
+   "Dish_5_lid"
+  ]
+ },
+ {
+  "title": "Dish 5 culture",
+  "group": "Dishes",
+  "desc": "Synthetic illustration of colony morphology used for rendering \u2014 not a photograph.",
+  "spec": "",
+  "objects": [
+   "Dish_5_agar",
+   "Dish_5_agar_body"
+  ]
+ },
+ {
+  "title": "Dish 5 barcode",
+  "group": "Dishes",
+  "desc": "Printed on-device, applied to the dish wall; the side scanner links it to the run.",
+  "spec": "",
+  "objects": [
+   "Dish_5_label"
+  ]
+ },
+ {
+  "title": "Dish 6",
+  "group": "Dishes",
+  "desc": "Standard 90 mm polystyrene Petri dish. Seats in a counterbored pocket that locates it under the camera.",
+  "spec": "",
+  "objects": [
+   "Dish_6_base"
+  ]
+ },
+ {
+  "title": "Dish 6 lid",
+  "group": "Dishes",
+  "desc": "",
+  "spec": "",
+  "objects": [
+   "Dish_6_lid"
+  ]
+ },
+ {
+  "title": "Dish 6 culture",
+  "group": "Dishes",
+  "desc": "Synthetic illustration of colony morphology used for rendering \u2014 not a photograph.",
+  "spec": "",
+  "objects": [
+   "Dish_6_agar",
+   "Dish_6_agar_body"
+  ]
+ },
+ {
+  "title": "Dish 6 barcode",
+  "group": "Dishes",
+  "desc": "Printed on-device, applied to the dish wall; the side scanner links it to the run.",
+  "spec": "",
+  "objects": [
+   "Dish_6_label"
+  ]
+ },
+ {
+  "title": "Gull-wing door frame",
+  "group": "Door",
+  "desc": "Graphite PC frame on damped torque hinges \u2014 opens up and back so both hands stay free for dishes.",
+  "spec": "",
+  "objects": [
+   "Door_frame"
+  ]
+ },
+ {
+  "title": "Heated front glazing",
+  "group": "Door",
+  "desc": "Double-glazed with a heated inner pane so condensation does not obscure the view of the dishes.",
+  "spec": "",
+  "objects": [
+   "Door_glass_front"
+  ]
+ },
+ {
+  "title": "Heated top glazing",
+  "group": "Door",
+  "desc": "Top window gives a clear overhead view of all six dishes.",
+  "spec": "",
+  "objects": [
+   "Door_glass_top"
+  ]
+ },
+ {
+  "title": "Torque hinge",
+  "group": "Door",
+  "desc": "Constant-torque friction hinge, holds the door at any angle.",
+  "spec": "",
+  "objects": [
+   "Hinge_0",
+   "Hinge_1"
+  ]
+ },
+ {
+  "title": "Finger pull",
+  "group": "Door",
+  "desc": "Lip under the door rail that fingers hook from the console scoop; works with gloved hands.",
+  "spec": "",
+  "objects": [
+   "Door_grip"
+  ]
+ },
+ {
+  "title": "Brand badge",
+  "group": "Door",
+  "desc": "",
+  "spec": "",
+  "objects": [
+   "Logo_badge",
+   "Logo_text"
+  ]
+ },
+ {
+  "title": "Interlock magnet",
+  "group": "Door",
+  "desc": "Pairs with a Hall sensor; UV-C and carousel motion stop when the door opens.",
+  "spec": "",
+  "objects": [
+   "Door_magnet"
+  ]
+ },
+ {
+  "title": "Compute board",
+  "group": "Electronics",
+  "desc": "Quad-core ARM compute module: UI, camera pipeline, on-device colony detection, encrypted store-and-forward sync.",
+  "spec": "4\u00d7 A76, 8 GB, 64 GB eMMC, TPM",
+  "objects": [
+   "Compute_carrier",
+   "Compute_carrier_ic0",
+   "Compute_carrier_ic1",
+   "Compute_carrier_ic2",
+   "Compute_carrier_ic3",
+   "Compute_carrier_ic4",
+   "Compute_carrier_ic5",
+   "Compute_carrier_ic6",
+   "Compute_carrier_ic7",
+   "Compute_carrier_ic8",
+   "Compute_carrier_ic9",
+   "Compute_carrier_p0",
+   "Compute_carrier_p1",
+   "Compute_carrier_p2",
+   "Compute_carrier_p3",
+   "Compute_carrier_p4",
+   "Compute_carrier_p5",
+   "Compute_carrier_p6",
+   "Compute_carrier_p7",
+   "Compute_carrier_p8",
+   "Compute_carrier_p9",
+   "Compute_carrier_p10",
+   "Compute_carrier_p11",
+   "Compute_carrier_p12",
+   "Compute_carrier_p13",
+   "Compute_carrier_p14",
+   "Compute_carrier_p15",
+   "Compute_carrier_p16",
+   "Compute_carrier_p17",
+   "Compute_carrier_p18",
+   "Compute_carrier_p19",
+   "Compute_module",
+   "CM_heatsink",
+   "Compute_conn_0",
+   "Compute_conn_1"
+  ]
+ },
+ {
+  "title": "Real-time control board",
+  "group": "Electronics",
+  "desc": "Safety MCU runs PID climate control, stepper motion and interlocks independent of the UI computer.",
+  "spec": "Cortex-M7, watchdog, independent over-temp cut-out",
+  "objects": [
+   "Control_board",
+   "Control_board_ic0",
+   "Control_board_ic1",
+   "Control_board_ic2",
+   "Control_board_ic3",
+   "Control_board_ic4",
+   "Control_board_ic5",
+   "Control_board_ic6",
+   "Control_board_ic7",
+   "Control_board_ic8",
+   "Control_board_p0",
+   "Control_board_p1",
+   "Control_board_p2",
+   "Control_board_p3",
+   "Control_board_p4",
+   "Control_board_p5",
+   "Control_board_p6",
+   "Control_board_p7",
+   "Control_board_p8",
+   "Control_board_p9",
+   "Control_board_p10",
+   "Control_board_p11",
+   "Control_board_p12",
+   "Control_board_p13",
+   "Control_board_p14",
+   "Control_board_p15",
+   "Control_board_p16",
+   "Control_board_p17",
+   "Driver_heatsink_0",
+   "Driver_heatsink_1",
+   "Driver_heatsink_2",
+   "Driver_heatsink_3"
+  ]
+ },
+ {
+  "title": "Power supply",
+  "group": "Electronics",
+  "desc": "Enclosed 24 V power supply, universal input.",
+  "spec": "100\u2013240 V~",
+  "objects": [
+   "PSU"
+  ]
+ },
+ {
+  "title": "Base band",
+  "group": "Enclosure",
+  "desc": "One-piece ring carrying the R24 roll under every bottom edge, so the form closes on itself instead of stopping at the bench and fingers find an edge to lift by. Pulled straight down (no undercut); its horizontal 0.8 mm reveal at z 40 continues the console's lower edge all the way round. A 4 mm step lip rises behind the upper parts; retained by six snap hooks onto the tray edge (not modelled).",
+  "spec": "PC/ABS, 3.0 mm wall, MT-11010 \u00b7 Lab White #ECEEF2",
+  "objects": [
+   "Base_band"
+  ]
+ },
+ {
+  "title": "Side panel",
+  "group": "Enclosure",
+  "desc": "Mirrored pair from one family tool, pulled along X. Carries the full side profile and the R32 roll; the parting line sits on the roll tangent and meets the saddle in a 0.8 mm reveal. Two M3.5 thread-forming screws into gusseted bosses from under the base \u2014 no visible fasteners.",
+  "spec": "PC/ABS, 3.0 mm wall, MT-11010 \u00b7 Lab White #ECEEF2",
+  "objects": [
+   "Side_Panel_L",
+   "Side_Panel_R"
+  ]
+ },
+ {
+  "title": "Top saddle",
+  "group": "Enclosure",
+  "desc": "Top and back in one L-shaped moulding pulled on the 45\u00b0 diagonal so both faces draft. Step lips run under both reveals; ribs stiffen the 430 mm span; two rear bosses take the screws from below.",
+  "spec": "PC/ABS, 3.0 mm wall, MT-11010 \u00b7 Lab White #ECEEF2",
+  "objects": [
+   "Top_Saddle"
+  ]
+ },
+ {
+  "title": "Lift handhold",
+  "group": "Enclosure",
+  "desc": "Finger recess moulded up into the base band's underside roll, sized for four fingers: hands slide under the R24 edge and hook in, away from the door and screen.",
+  "spec": "PC/ABS, 2.0 mm, MT-11020 \u00b7 Graphite #141518",
+  "objects": [
+   "Lift_pocket_L",
+   "Lift_pocket_R"
+  ]
+ },
+ {
+  "title": "Side accent inlay",
+  "group": "Enclosure",
+  "desc": "Navy inlay insert-moulded into the side panel; the colour break marks the grip zone above the finger recess.",
+  "spec": "PC, 1.0 mm, SPI-B1 \u00b7 Petricor Navy #191C55",
+  "objects": [
+   "Accent_L",
+   "Accent_R"
+  ]
+ },
+ {
+  "title": "Water reservoir",
+  "group": "Humidity",
+  "desc": "Slide-out reservoir behind a rear hatch; float sensor warns before it runs dry.",
+  "spec": "600 mL",
+  "objects": [
+   "Water_reservoir",
+   "Reservoir_water"
+  ]
+ },
+ {
+  "title": "Reservoir hatch",
+  "group": "Humidity",
+  "desc": "Rear hatch \u2014 refill without opening the chamber.",
+  "spec": "",
+  "objects": [
+   "Reservoir_hatch"
+  ]
+ },
+ {
+  "title": "Fill cap",
+  "group": "Humidity",
+  "desc": "",
+  "spec": "",
+  "objects": [
+   "Reservoir_cap"
+  ]
+ },
+ {
+  "title": "Ultrasonic atomiser",
+  "group": "Humidity",
+  "desc": "Ultrasonic piezo atomiser \u2014 humidifies without a heating element.",
+  "spec": "",
+  "objects": [
+   "Ultrasonic_transducer"
+  ]
+ },
+ {
+  "title": "Mist tube",
+  "group": "Humidity",
+  "desc": "Silicone line into the air handler outlet.",
+  "spec": "",
+  "objects": [
+   "Mist_tube"
+  ]
+ },
+ {
+  "title": "Level sensor",
+  "group": "Humidity",
+  "desc": "",
+  "spec": "",
+  "objects": [
+   "Float_sensor"
+  ]
+ },
+ {
+  "title": "Transillumination panel",
+  "group": "Imaging",
+  "desc": "Edge-lit LED panel under the imaging station; back-lighting reveals translucent and early micro-colonies.",
+  "spec": "",
+  "objects": [
+   "Backlight_panel",
+   "Backlight_emitter"
+  ]
+ },
+ {
+  "title": "Imaging head",
+  "group": "Imaging",
+  "desc": "Sealed, heated optical head. Fixed working distance to the dish plane \u2014 no autofocus drift between time-points.",
+  "spec": "",
+  "objects": [
+   "Imaging_head_housing"
+  ]
+ },
+ {
+  "title": "Anti-fog window",
+  "group": "Imaging",
+  "desc": "AR-coated window, heated 2 \u00b0C above chamber air.",
+  "spec": "",
+  "objects": [
+   "Imaging_window"
+  ]
+ },
+ {
+  "title": "Multispectral ring light",
+  "group": "Imaging",
+  "desc": "24 LEDs in four channels (white, 365 nm UV, 470 nm, 850 nm IR) for pigment, fluorescence and texture contrast.",
+  "spec": "",
+  "objects": [
+   "Ring_light_pcb",
+   "Ring_led_0",
+   "Ring_led_1",
+   "Ring_led_2",
+   "Ring_led_3",
+   "Ring_led_4",
+   "Ring_led_5",
+   "Ring_led_6",
+   "Ring_led_7",
+   "Ring_led_8",
+   "Ring_led_9",
+   "Ring_led_10",
+   "Ring_led_11",
+   "Ring_led_12",
+   "Ring_led_13",
+   "Ring_led_14",
+   "Ring_led_15",
+   "Ring_led_16",
+   "Ring_led_17",
+   "Ring_led_18",
+   "Ring_led_19",
+   "Ring_led_20",
+   "Ring_led_21",
+   "Ring_led_22",
+   "Ring_led_23"
+  ]
+ },
+ {
+  "title": "Cross-polarised diffuser",
+  "group": "Imaging",
+  "desc": "Diffuser with linear polariser; paired with a lens polariser to kill agar glare.",
+  "spec": "",
+  "objects": [
+   "Ring_diffuser"
+  ]
+ },
+ {
+  "title": "Fixed-focal lens",
+  "group": "Imaging",
+  "desc": "Low-distortion lens stopped down for full-dish depth of field.",
+  "spec": "",
+  "objects": [
+   "Lens_barrel",
+   "Lens_element"
+  ]
+ },
+ {
+  "title": "Image sensor board",
+  "group": "Imaging",
+  "desc": "12 MP colour sensor; about 25 \u00b5m per pixel across a 100 mm field of view.",
+  "spec": "12 MP, 4056\u00d73040",
+  "objects": [
+   "Camera_board",
+   "Image_sensor"
+  ]
+ },
+ {
+  "title": "Camera ribbon",
+  "group": "Imaging",
+  "desc": "MIPI CSI-2 flat flex to compute module.",
+  "spec": "",
+  "objects": [
+   "Camera_FFC"
+  ]
+ },
+ {
+  "title": "Head heater",
+  "group": "Imaging",
+  "desc": "Polyimide heater keeps optics above dew point.",
+  "spec": "",
+  "objects": [
+   "Imaging_heater"
+  ]
+ },
+ {
+  "title": "Printer door",
+  "group": "Printer",
+  "desc": "Push-to-open door with a concave \u00d816 mm press dimple; label roll drops in, no threading.",
+  "spec": "PC/ABS, MT-11020",
+  "objects": [
+   "Printer_door"
+  ]
+ },
+ {
+  "title": "Label exit + tear bar",
+  "group": "Printer",
+  "desc": "Serrated tear bar; labels presented at the operator.",
+  "spec": "",
+  "objects": [
+   "Printer_exit_slot"
+  ]
+ },
+ {
+  "title": "Printer chassis",
+  "group": "Printer",
+  "desc": "Folded steel chassis carrying a direct-thermal line printer mechanism.",
+  "spec": "58 mm media, 203 dpi",
+  "objects": [
+   "Printer_chassis"
+  ]
+ },
+ {
+  "title": "Label roll",
+  "group": "Printer",
+  "desc": "Chemical-resistant synthetic labels sized for 90 mm dish side-walls. Drop-in loading.",
+  "spec": "",
+  "objects": [
+   "Label_roll",
+   "Label_core"
+  ]
+ },
+ {
+  "title": "Platen roller",
+  "group": "Printer",
+  "desc": "Silicone platen, stepper-driven.",
+  "spec": "",
+  "objects": [
+   "Platen_roller"
+  ]
+ },
+ {
+  "title": "Thermal print head",
+  "group": "Printer",
+  "desc": "Direct-thermal line head.",
+  "spec": "",
+  "objects": [
+   "Thermal_head"
+  ]
+ },
+ {
+  "title": "Feed motor",
+  "group": "Printer",
+  "desc": "PM stepper for label feed.",
+  "spec": "",
+  "objects": [
+   "Printer_motor"
+  ]
+ },
+ {
+  "title": "Rear I/O board",
+  "group": "RearIO",
+  "desc": "",
+  "spec": "",
+  "objects": [
+   "IO_board"
+  ]
+ },
+ {
+  "title": "Rear I/O",
+  "group": "RearIO",
+  "desc": "IEC inlet with fused switch, Gigabit Ethernet, 2\u00d7 USB-A (scanner/keyboard/export), USB-C service port.",
+  "spec": "IEC C14, RJ45 1 GbE, 2\u00d7 USB-A, USB-C",
+  "objects": [
+   "IO_plate",
+   "IEC_inlet",
+   "RJ45",
+   "USB_A_0",
+   "USB_A_1",
+   "Power_switch",
+   "IO_label_0",
+   "IO_label_1",
+   "IO_label_2",
+   "IO_label_3"
+  ]
+ },
+ {
+  "title": "Side barcode scanner",
+  "group": "Scanner",
+  "desc": "Present a labelled dish to the side window \u2014 1D/2D imager reads it without opening the door.",
+  "spec": "1D + 2D (DataMatrix, QR)",
+  "objects": [
+   "Scanner_window",
+   "Scanner_hint"
+  ]
+ },
+ {
+  "title": "Imager engine",
+  "group": "Scanner",
+  "desc": "Area imager with red aimer and white illumination.",
+  "spec": "",
+  "objects": [
+   "Scanner_engine",
+   "Scanner_aimer",
+   "Scanner_board"
+  ]
+ },
+ {
+  "title": "Harness",
+  "group": "Wiring",
+  "desc": "Keyed, latching connectors throughout \u2014 every sub-assembly is field-swappable.",
+  "spec": "",
+  "objects": [
+   "TEC_0_lead_0",
+   "TEC_0_lead_1",
+   "TEC_1_lead_0",
+   "TEC_1_lead_1",
+   "Harness_0",
+   "Harness_1",
+   "Harness_2",
+   "Harness_3",
+   "Harness_4",
+   "Harness_5",
+   "Harness_6"
+  ]
+ }
+]
