@@ -1,0 +1,172 @@
+@import "tailwindcss";
+
+/* Petricor design tokens — derived from the original brand board (electric blue + graphite + mono type). */
+@theme {
+  --color-blue: #3a44ff;
+  --color-blue-600: #2f38e6;
+  --color-blue-700: #242bbf;
+  --color-blue-50: #eef0ff;
+  --color-blue-100: #dfe2ff;
+  --color-ink: #0d0e11;
+  --color-graphite: #16171b;
+  --color-graphite-2: #1d1f24;
+  --color-graphite-3: #272a31;
+  --color-graphite-4: #343843;
+  --color-paper: #f4f5f7;
+  --color-line: #e4e6eb;
+  --color-line-2: #d3d6de;
+  --color-muted: #6b7080;
+  --color-ok: #22b85a;
+  --color-ok-50: #e7f8ee;
+  --color-warn: #e8930c;
+  --color-warn-50: #fdf3e2;
+  --color-crit: #e5484d;
+  --color-crit-50: #fdecec;
+  --color-uv: #8f6bff;
+  --color-agar: #e9cf9a;
+
+  --font-sans: var(--font-geist), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-reddit-mono), ui-monospace, SFMono-Regular, monospace;
+
+  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background: var(--color-blue);
+  color: white;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+/* number/label styling used throughout — mono caps micro-labels */
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+.card {
+  background: white;
+  border: 1px solid var(--color-line);
+  border-radius: 14px;
+}
+
+.scrollbar-thin {
+  scrollbar-width: thin;
+}
+
+@keyframes pc-pulse {
+  0%, 100% { opacity: 1 }
+  50% { opacity: 0.35 }
+}
+.animate-pc-pulse {
+  animation: pc-pulse 1.6s ease-in-out infinite;
+}
+
+@keyframes pc-rise {
+  from { opacity: 0; transform: translateY(18px) }
+  to { opacity: 1; transform: none }
+}
+.animate-rise {
+  animation: pc-rise 0.8s var(--ease-out-soft) both;
+}
+
+@keyframes pc-print {
+  from { transform: translateY(-100%) }
+  to { transform: translateY(0) }
+}
+
+@keyframes pc-scan {
+  0% { transform: translateX(-100%) }
+  100% { transform: translateX(100%) }
+}
+.animate-scan {
+  animation: pc-scan 1.4s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* ---- marketing motion (subtle; all disabled by the reduced-motion rule above) */
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.9s var(--ease-out-soft), transform 0.9s var(--ease-out-soft);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+.reveal[data-in] {
+  opacity: 1;
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; }
+}
+
+@keyframes pc-progress {
+  from { transform: scaleX(0) }
+  to { transform: scaleX(1) }
+}
+.animate-progress {
+  transform-origin: left;
+  animation: pc-progress var(--dur, 5s) linear both;
+}
+
+@keyframes pc-ping {
+  0% { transform: scale(0.6); opacity: 0.9 }
+  80%, 100% { transform: scale(2.4); opacity: 0 }
+}
+.animate-ping-soft {
+  animation: pc-ping 2.2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@keyframes pc-kenburns {
+  from { transform: scale(1.0) }
+  to { transform: scale(1.035) }
+}
+.animate-kenburns {
+  animation: pc-kenburns var(--dur, 6s) ease-out both;
+}
+
+@keyframes pc-dash {
+  to { stroke-dashoffset: -24 }
+}
+.animate-dash {
+  animation: pc-dash 1.6s linear infinite;
+}
+
+@keyframes pc-float {
+  0%, 100% { transform: translateY(0) }
+  50% { transform: translateY(-6px) }
+}
+.animate-float {
+  animation: pc-float 6s ease-in-out infinite;
+}
+
+@keyframes pc-travel {
+  0% { left: 0%; opacity: 0 }
+  12% { opacity: 1 }
+  88% { opacity: 1 }
+  100% { left: 100%; opacity: 0 }
+}
+.animate-travel {
+  animation: pc-travel 2.8s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+}
