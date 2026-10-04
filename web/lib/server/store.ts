@@ -8,7 +8,9 @@ import { seed } from './seed'
  * Document store persisted to data/store.json (atomic rename, debounced).
  * Route handlers, the twin and server components share this one store; swapping it for Postgres is a change to this module + seed.
  */
-const FILE = path.join(process.cwd(), 'data', 'store.json')
+/** Writable data dir: the deployment bundle is read-only on Vercel, so persist to /tmp there (per-instance, ephemeral). */
+export const DATA_DIR = process.env.VERCEL ? path.join('/tmp', 'petricor') : path.join(process.cwd(), 'data')
+const FILE = path.join(DATA_DIR, 'store.json')
 const VERSION = 4
 
 type G = typeof globalThis & { __pcStore?: StoreShape; __pcSaveTimer?: NodeJS.Timeout }
@@ -42,10 +44,14 @@ export function save() {
 
 export function flush() {
   if (!g.__pcStore) return
-  fs.mkdirSync(path.dirname(FILE), { recursive: true })
-  const tmp = FILE + '.tmp'
-  fs.writeFileSync(tmp, JSON.stringify(g.__pcStore))
-  fs.renameSync(tmp, FILE)
+  try {
+    fs.mkdirSync(path.dirname(FILE), { recursive: true })
+    const tmp = FILE + '.tmp'
+    fs.writeFileSync(tmp, JSON.stringify(g.__pcStore))
+    fs.renameSync(tmp, FILE)
+  } catch (e) {
+    console.error('[store] flush failed; keeping in-memory state', e)
+  }
 }
 
 export function resetStore() {

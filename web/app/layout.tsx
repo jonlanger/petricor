@@ -8,7 +8,7 @@ const reddit = Reddit_Mono({ variable: '--font-reddit-mono', subsets: ['latin'],
 export const metadata: Metadata = {
   title: { default: 'Petricor — automated fungal culture imaging', template: '%s · Petricor' },
   description:
-    'Petricor is a benchtop incubator and imaging system for fungal and mould cultures, with an on-device workflow and a cloud platform for review, traceability and reporting.',
+    'Petricor is a benchtop incubator and imaging system for fungal and mold cultures, with an on-device workflow and a cloud platform for review, traceability and reporting.',
 }
 
 export default function RootLayout({ children }: LayoutProps<'/'>) {

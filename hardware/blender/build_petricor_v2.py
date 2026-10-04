@@ -37,7 +37,7 @@ C = {k: coll(k, DEV) for k in [
 R_PRIMARY = 48      # big shoulders: back-top, slope-to-lip
 R_SECONDARY = 24    # top-front, console junction (concave), side roll, plan corners
 R_DETAIL = 8        # foot of the lip, base, windows, hatches
-R_BREAK = 1.0       # edge break on every moulded edge
+R_BREAK = 1.0       # edge break on every molded edge
 WALL = 3.0          # PC/ABS nominal for a large cover (upper end of the PC/ABS range; confirm with molder)
 GAP_DOOR = 1.5      # moving door: constant all round
 REVEAL = 0.8        # fixed part breaks (dressed shadow line over a step lip)
@@ -111,7 +111,7 @@ boolean(cover, extrude_yz('cut', ACCENT, 239.0, 245))
 # rear reservoir hatch opening
 hcut = box('cut', (100, 20, 88), (-168, 248, 60)); bevel(hcut, 6, 4, angle=80, harden=False); apply_mods(hcut)
 boolean(cover, hcut)
-# lift handholds: a moulded pocket under each side inlay (touch point: "hold here" — the first thing hands find)
+# lift handholds: a molded pocket under each side inlay (touch point: "hold here" — the first thing hands find)
 HH = rrect(160, 70, R_DETAIL, 50, 9)          # (y, z) outline: y −30…130, opening up to z 44
 for sx in (-1, 1):
     boolean(cover, loft_yz_draft('cut', HH, sx * (W - 14), sx * (W + 10), DRAFT_POCKET))
@@ -140,7 +140,7 @@ side_R = part_slab(cover, 'Side_Panel_R', SPLIT_X + REVEAL / 2, 300)
 saddle = part_slab(cover, 'Top_Saddle', -SPLIT_X + REVEAL / 2, SPLIT_X - REVEAL / 2)
 bpy.data.objects.remove(cover)
 
-# step lip under each reveal, moulded on the saddle: blocks light and dust, lets the parts self-locate
+# step lip under each reveal, molded on the saddle: blocks light and dust, lets the parts self-locate
 lip = envelope('Saddle_lip', WALL, W - WALL)
 boolean(lip, envelope('cut', WALL + LIP_T, W - WALL - LIP_T))
 for c_ in (box('cut', (452, 380, 330), (0, -132, 364)), box('cut', (452, 220, 196), (0, -210, 104)), box('cut', (700, 900, 60), (0, 0, -18))):
@@ -177,10 +177,10 @@ for sx, o in ((-1, side_L), (1, side_R)):
     tag(o, 'Enclosure', 'Side panel', 'Mirrored pair from one family tool, pulled along X. Carries the full side profile and the R24 roll; '
         'the parting line sits on the roll tangent and meets the saddle in a 0.8 mm reveal. Two M3.5 thread-forming screws into gusseted '
         'bosses from under the base — no visible fasteners.', (sx * 110, 0, 420), PANEL_SPEC)
-    o['pc_process'] = 'Injection moulded (family tool, pull ±X)'
-tag(saddle, 'Enclosure', 'Top saddle', 'Top and back in one L-shaped moulding pulled on the 45° diagonal so both faces draft. Step lips run '
+    o['pc_process'] = 'Injection molded (family tool, pull ±X)'
+tag(saddle, 'Enclosure', 'Top saddle', 'Top and back in one L-shaped molding pulled on the 45° diagonal so both faces draft. Step lips run '
     'under both reveals; ribs stiffen the 430 mm span; two rear bosses take the screws from below.', (0, 0, 420), PANEL_SPEC)
-saddle['pc_process'] = 'Injection moulded (pull on Y+Z diagonal)'
+saddle['pc_process'] = 'Injection molded (pull on Y+Z diagonal)'
 
 # handhold liners close the pockets (graphite, matches the console family)
 for sx in (-1, 1):
@@ -189,7 +189,7 @@ for sx in (-1, 1):
     boolean(liner_, box('cut', (700, 900, 60), (0, 0, -18)))
     liner_.data.materials.append(M['graphite_matte'])
     bevel(liner_, R_BREAK, 2)
-    tag(liner_, 'Enclosure', 'Lift handhold', 'Moulded pocket under each side inlay, sized for four fingers; the lift points are where hands '
+    tag(liner_, 'Enclosure', 'Lift handhold', 'Molded pocket under each side inlay, sized for four fingers; the lift points are where hands '
         'naturally land, away from the door and screen.', (sx * 110, 0, 420), 'PC/ABS, 2.0 mm, MT-11020 · Graphite #141518')
 
 for sx in (-1, 1):
@@ -198,7 +198,7 @@ for sx in (-1, 1):
     boolean(acc, loft_yz_draft('cut', HH, sx * (W - 14), sx * (W + 10), DRAFT_POCKET))
     acc.data.materials.append(M['navy'])
     bevel(acc, 0.6, 2)
-    tag(acc, 'Enclosure', 'Side accent inlay', 'Navy inlay insert-moulded into the side panel; the colour break marks the grip zone above the handhold.',
+    tag(acc, 'Enclosure', 'Side accent inlay', 'Navy inlay insert-molded into the side panel; the colour break marks the grip zone above the handhold.',
         (sx * 90, 0, 420), 'PC, 1.0 mm, SPI-B1 · Petricor Navy #191C55')
 
 # ----------------------------------------------------------------- base chassis
@@ -213,7 +213,7 @@ BX_ = W - WALL - 3.5 - BOSS_STANDOFF
 for i, (fx, fy) in enumerate([(-BX_, -150), (-BX_, 175), (BX_, -150), (BX_, 175), (-70, RB_Y), (70, RB_Y)]):
     sc_ = join([cyl(f'Fastener_{i}', 1.75, 16, (fx, fy, 12), C['Base'], M['steel'], verts=16),
                 cyl(f'Fastener_{i}_head', 3.4, 2.2, (fx, fy, 2.9), C['Base'], M['steel'], verts=24)], f'Fastener_{i}')
-    tag(sc_, 'Base', 'Thread-forming screw', 'M3.5 × 16 thread-forming screw (PT-style) from under the base into a moulded boss; '
+    tag(sc_, 'Base', 'Thread-forming screw', 'M3.5 × 16 thread-forming screw (PT-style) from under the base into a molded boss; '
         'heads sit on the underside, never on an A-surface. Confirm pilot and boss OD with the screw maker.', (0, 0, -380), 'M3.5 × 16 PT, pilot Ø2.9')
 deck = extrude_xy('Deck_plate', rrect(462, 350, 10, 0, 68), 126, 128, C['Base'])
 boolean(deck, cyl('cut', 14, 10, (0, 52, 127)))
@@ -445,7 +445,7 @@ boolean(tr_front, box('cut', (382, 20, 200), (0, -111, 307)))
 trim = join([tr_top, tr_front], 'Chamber_trim')
 trim.data.materials.clear(); trim.data.materials.append(M['shell'])
 bevel(trim, 0.8, 2)
-tag(trim, 'Chamber', 'Chamber trim', 'Moulded trim closing the chamber to the cover; carries the door gasket seat.', (0, 0, 110))
+tag(trim, 'Chamber', 'Chamber trim', 'Molded trim closing the chamber to the cover; carries the door gasket seat.', (0, 0, 110))
 clb = box('Chamber_lightbar', (300, 8, 3), (0, 30, 384.5), C['Chamber'], M['white_glow'], bev=0.8)
 tag(clb, 'Chamber', 'Chamber light', 'Dimmable white LED bar for viewing dishes through the door; switched off automatically during imaging.', (0, 0, 140))
 # sensors

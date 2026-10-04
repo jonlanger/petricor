@@ -306,7 +306,7 @@ def extrude_yz(name, pts, x0, x1, collection=None, material=None):
 
 
 def loft_yz_draft(name, pts, x_in, x_out, deg, collection=None, material=None):
-    """Through-opening cutter along X with moulding draft: the outline at x_out is grown by
+    """Through-opening cutter along X with molding draft: the outline at x_out is grown by
     |x_out − x_in|·tan(deg), so the opening is larger on the cavity (outside) face."""
     grow = abs(x_out - x_in) * math.tan(math.radians(deg))
     outer = offset_polygon(pts, -grow)

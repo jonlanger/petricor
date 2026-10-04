@@ -1,13 +1,14 @@
 import 'server-only'
 import fs from 'node:fs'
 import path from 'node:path'
+import { DATA_DIR } from './store'
 
 /**
  * Open-data connectors. Everything here is fetched live from public APIs and cached on disk:
  *   • GBIF (Global Biodiversity Information Facility) — taxonomy + occurrence statistics. https://www.gbif.org/developer
  *   • Wikimedia Commons — openly-licensed culture photographs, with licence + attribution preserved.
  */
-const CACHE_DIR = path.join(process.cwd(), 'data', 'cache')
+const CACHE_DIR = path.join(DATA_DIR, 'cache')
 const TTL = 7 * 86400e3
 const UA = 'Petricor/0.1 (research prototype; contact via repository)'
 
@@ -19,8 +20,10 @@ async function cached<T>(key: string, fn: () => Promise<T>): Promise<T & { _cach
   } catch {}
   const v = await fn()
   const out = { ...(v as object), _cachedAt: Date.now() } as T & { _cachedAt: number }
-  fs.mkdirSync(CACHE_DIR, { recursive: true })
-  fs.writeFileSync(f, JSON.stringify(out))
+  try {
+    fs.mkdirSync(CACHE_DIR, { recursive: true })
+    fs.writeFileSync(f, JSON.stringify(out))
+  } catch {}
   return out
 }
 

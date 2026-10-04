@@ -12,7 +12,7 @@ const USERS: User[] = [
 ]
 
 const PROTOCOLS: Protocol[] = [
-  { id: 'p_ym', name: 'Yeast & mould enumeration', medium: 'DRBC agar', tempC: 25, rh: 85, durationH: 120, captureEveryH: 2,
+  { id: 'p_ym', name: 'Yeast & mold enumeration', medium: 'DRBC agar', tempC: 25, rh: 85, durationH: 120, captureEveryH: 2,
     channels: ['white', 'transillum'], description: 'Surface-spread product samples. Counts and presumptive genus per dish at every capture.' },
   { id: 'p_air', name: 'Environmental air monitoring', medium: 'Sabouraud dextrose agar', tempC: 25, rh: 80, durationH: 168, captureEveryH: 4,
     channels: ['white', 'uv365'], description: 'Settle plates or active air samples from monitored rooms. Trend view by location.' },
@@ -104,7 +104,7 @@ export function seed(version: number): StoreShape {
   const prodS = ['Lot 4471 — yogurt', 'Lot 4471 — yogurt (dup)', 'Lot 4472 — fruit prep', 'Lot 4472 — fruit prep (dup)', 'Line swab — filler', 'Negative control']
     .map((l, i) => sample(l, i === 5 ? 'reference' : i === 4 ? 'surface' : 'product', l, now - 6.5 * day + i * 300e3, 'u_sam', i === 5 ? undefined : undefined))
   samples.push(...prodS)
-  const r2 = mkRun('run_ym_0922', 'Yeast & mould — lots 4471/4472', 'dev_b', PROTOCOLS[0], 'u_sam', prodS, now - 6 * day, 120, 'complete')
+  const r2 = mkRun('run_ym_0922', 'Yeast & mold — lots 4471/4472', 'dev_b', PROTOCOLS[0], 'u_sam', prodS, now - 6 * day, 120, 'complete')
   r2.dishes[5].truth = [] // negative control stays clean
   runs.push(r2)
 

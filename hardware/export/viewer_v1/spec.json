@@ -3,7 +3,7 @@
  "parts": [
   {
    "part": "Outer_cover",
-   "process": "Injection moulded",
+   "process": "Injection molded",
    "material": "PC/ABS, 3.5 mm wall",
    "cmf": "PC/ABS, 3.5 mm wall",
    "bbox_mm": [
@@ -64,12 +64,12 @@
    "volume_cm3": 89.94,
    "mass_g": 107.9,
    "manifold": false,
-   "notes": "Navy overmoulded inlay; wipe-clean grip zone for lifting.",
+   "notes": "Navy overmolded inlay; wipe-clean grip zone for lifting.",
    "group": "Enclosure"
   },
   {
    "part": "Gull_wing_door_frame",
-   "process": "Injection moulded",
+   "process": "Injection molded",
    "material": "",
    "cmf": "",
    "bbox_mm": [
@@ -215,9 +215,9 @@
   },
   {
    "part": "Front_console",
-   "process": "Injection moulded",
-   "material": "PC, 3.5 mm, in-mould texture",
-   "cmf": "PC, 3.5 mm, in-mould texture",
+   "process": "Injection molded",
+   "material": "PC, 3.5 mm, in-mold texture",
+   "cmf": "PC, 3.5 mm, in-mold texture",
    "bbox_mm": [
     451.0,
     129.44,
@@ -388,7 +388,7 @@
    "volume_cm3": 105.42,
    "mass_g": 121.2,
    "manifold": false,
-   "notes": "Moulded trim closing the chamber to the cover; carries the door gasket seat.",
+   "notes": "Molded trim closing the chamber to the cover; carries the door gasket seat.",
    "group": "Chamber"
   },
   {
@@ -1529,7 +1529,7 @@
   },
   {
    "part": "Printer_door",
-   "process": "Injection moulded",
+   "process": "Injection molded",
    "material": "",
    "cmf": "",
    "bbox_mm": [

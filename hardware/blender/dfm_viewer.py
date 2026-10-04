@@ -49,9 +49,9 @@ for o in objs:
 for o in baked:
     o.name = o.name  # names are unique already
 
-# ---------------------------------------------------------------- DFM checks on moulded parts (before joining)
+# ---------------------------------------------------------------- DFM checks on molded parts (before joining)
 SLOPE_N = (0.0, -0.737, 0.674)
-MOULDED = {  # base name: (pull axis in Blender coords, nominal wall mm, resin)
+MOLDED = {  # base name: (pull axis in Blender coords, nominal wall mm, resin)
     'Side_Panel_L': ((1, 0, 0), 3.0, 'PC/ABS'), 'Side_Panel_R': ((1, 0, 0), 3.0, 'PC/ABS'),
     'Top_Saddle': ((0, 1, 1), 3.0, 'PC/ABS'), 'Console': ((0, -0.8, 0.6), 3.0, 'PC/ABS'),
     'Door_frame': ((0, -1, 1), 4.0, 'PC'), 'Lift_pocket_L': ((1, 0, 0), 3.0, 'PC/ABS'),
@@ -61,8 +61,8 @@ MOULDED = {  # base name: (pull axis in Blender coords, nominal wall mm, resin)
 checks = {}
 for o in baked:
     base = re.sub(r'\.\d+$', '', o.name)
-    if base in MOULDED and o.type == 'MESH':
-        pull, wall, resin = MOULDED[base]
+    if base in MOLDED and o.type == 'MESH':
+        pull, wall, resin = MOLDED[base]
         checks[base] = {'pull': pull, 'resin': resin, 'manifold': ik.is_manifold(o),
                         'wall': ik.wall_report(o, wall, samples=900), 'draft': ik.draft_report(o, pull=pull, min_deg=1.0)}
         dr = checks[base]['draft']
@@ -116,7 +116,7 @@ for base, c in checks.items():
     for r in rows:
         if r['part'] == name_map.get(base):
             r['wall'] = c['wall']; r['draft'] = c['draft']; r['pull_axis'] = c['pull']; r['manifold'] = c['manifold']
-            r['process'] = r['process'] or 'Injection moulded'
+            r['process'] = r['process'] or 'Injection molded'
             r['wall']['part'] = r['part']; r['draft']['part'] = r['part']
 
 explode = {p.name: list(p.get('pc_explode') or [0, 0, 0]) for p in parts}

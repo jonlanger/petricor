@@ -402,7 +402,7 @@ def d_scoop():
 
 @shot
 def x_insulation():
-    """Moulded EPP insulation set around the liner, pulled apart to show the dimpled outboard faces."""
+    """Molded EPP insulation set around the liner, pulled apart to show the dimpled outboard faces."""
     reset_state()
     for o in objs:
         if not (o.name.startswith('Insul_') or o.name.startswith('Chamber_liner') or o.name.startswith('Side_Panel_R')):

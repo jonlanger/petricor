@@ -35,7 +35,7 @@ It keeps the language of the original Petricor concept: white body, graphite con
 | Door | `Door_frame`, `Door_glass_front/top`, `Hinge_*`, `Door_magnet`, `Logo_*` | Gull-wing L-door on torque hinges. Heated double glazing. Hall interlock. |
 | Console | `Console`, `Screen_*`, `Status_lightpipe` | 47.5° console. Optically-bonded 10.1″ panel. Run-state light pipe. |
 | Printer | `Printer_*`, `Label_*`, `Platen_roller`, `Thermal_head` | Direct-thermal, drop-in roll, tear bar at the operator. |
-| Chamber | `Chamber_liner`, `Air_baffle`, `Door_gasket`, `Chamber_trim`, `THR_probe*`, `UVC_*`, `Chamber_lightbar`, `Insul_*` | Electropolished 316L with coved corners. Perforated return plenum. Moulded EPP insulation (45 g/L) shaped to the shell, dimpled outer faces (Ø10 × 2.5 mm, 13 mm hex); 3.5 mm aerogel blanket over the top. |
+| Chamber | `Chamber_liner`, `Air_baffle`, `Door_gasket`, `Chamber_trim`, `THR_probe*`, `UVC_*`, `Chamber_lightbar`, `Insul_*` | Electropolished 316L with coved corners. Perforated return plenum. Molded EPP insulation (45 g/L) shaped to the shell, dimpled outer faces (Ø10 × 2.5 mm, 13 mm hex); 3.5 mm aerogel blanket over the top. |
 | Carousel | `Carousel_plate`, `Carousel_knob`, `Drive_*`, `Stepper_*`, `Motor_*`, `Home_sensor`, `Shaft_seal_housing` | Counterbored pockets with through-holes for transillumination. Quick-release knob. 60T/16T belt drive. Sealed shaft. |
 | Imaging | `Imaging_head_housing`, `Imaging_window`, `Ring_*`, `Lens_*`, `Camera_*`, `Image_sensor`, `Imaging_heater`, `Backlight_*` | Fixed-geometry head over the rear pocket (the "imaging station"). 24-LED ring in four channels. Edge-lit backlight below. |
 | Climate | `Air_handler_duct`, `Cold_side_heatsink`, `TEC_*`, `Hot_side_heatsink`, `Exhaust_fan_*`, `Recirc_blower`, `PTC_heater`, `HEPA_*` | Peltier heat pump across a sealed duct. Blower recirculation. H13 HEPA on return air. |
@@ -51,8 +51,8 @@ The full list with descriptions is in `hardware/export/parts.json`, which drives
 
 | Part family | Process | Material |
 |---|---|---|
-| Cover, console, door frame, imaging housing | Injection moulding, textured | PC/ABS (white), PC (graphite) |
-| Side inlays | Overmould / insert | PC, navy |
+| Cover, console, door frame, imaging housing | Injection molding, textured | PC/ABS (white), PC (graphite) |
+| Side inlays | Overmold / insert | PC, navy |
 | Chamber liner, baffle | Deep draw / fold + weld, electropolish | 316L stainless |
 | Base tray, deck, posts, printer chassis, brackets | Laser-cut and folded sheet | Zinc-plated steel (SECC) |
 | Carousel | CNC or stamped + anodised | Aluminium |

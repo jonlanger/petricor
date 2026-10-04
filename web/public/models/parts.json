@@ -23,7 +23,7 @@
  {
   "title": "Thread-forming screw",
   "group": "Base",
-  "desc": "M3.5 \u00d7 16 thread-forming screw (PT-style) from under the base into a moulded boss; heads sit on the underside, never on an A-surface. Confirm pilot and boss OD with the screw maker.",
+  "desc": "M3.5 \u00d7 16 thread-forming screw (PT-style) from under the base into a molded boss; heads sit on the underside, never on an A-surface. Confirm pilot and boss OD with the screw maker.",
   "spec": "M3.5 \u00d7 16 PT, pilot \u00d82.9",
   "objects": [
    "Fastener_0",
@@ -227,7 +227,7 @@
  {
   "title": "Chamber trim",
   "group": "Chamber",
-  "desc": "Moulded trim closing the chamber to the cover. Its R28.5 corner is concentric with the door's R34 hood, so the gap and gasket stay constant all the way round.",
+  "desc": "Molded trim closing the chamber to the cover. Its R28.5 corner is concentric with the door's R34 hood, so the gap and gasket stay constant all the way round.",
   "spec": "",
   "objects": [
    "Chamber_trim"
@@ -280,8 +280,8 @@
  {
   "title": "Insulation panel",
   "group": "Chamber",
-  "desc": "Moulded EPP bead foam that follows the rounded shell, so the thickened side walls are insulated right into the corners. The outboard face is dimpled: the dimples hold a still-air layer against the cover and act as crush points that take up cover tolerance. The smooth face seats on the liner.",
-  "spec": "EPP 45 g/L moulded bead foam, dimpled outer face (\u00d810 \u00d7 2.5 on 13 hex)",
+  "desc": "Molded EPP bead foam that follows the rounded shell, so the thickened side walls are insulated right into the corners. The outboard face is dimpled: the dimples hold a still-air layer against the cover and act as crush points that take up cover tolerance. The smooth face seats on the liner.",
+  "spec": "EPP 45 g/L molded bead foam, dimpled outer face (\u00d810 \u00d7 2.5 on 13 hex)",
   "objects": [
    "Insul_side_L",
    "Insul_side_R",
@@ -292,7 +292,7 @@
  {
   "title": "Insulation blanket",
   "group": "Chamber",
-  "desc": "Only 3.5 mm between the liner and the saddle ribs \u2014 too thin to mould in EPP, so the top uses a silica-aerogel blanket bonded to the liner.",
+  "desc": "Only 3.5 mm between the liner and the saddle ribs \u2014 too thin to mold in EPP, so the top uses a silica-aerogel blanket bonded to the liner.",
   "spec": "3.5 mm silica aerogel blanket, PET-faced",
   "objects": [
    "Insul_top"
@@ -879,7 +879,7 @@
  {
   "title": "Top saddle",
   "group": "Enclosure",
-  "desc": "Top and back in one L-shaped moulding pulled on the 45\u00b0 diagonal so both faces draft. Step lips run under both reveals; ribs stiffen the 430 mm span; two rear bosses take the screws from below.",
+  "desc": "Top and back in one L-shaped molding pulled on the 45\u00b0 diagonal so both faces draft. Step lips run under both reveals; ribs stiffen the 430 mm span; two rear bosses take the screws from below.",
   "spec": "PC/ABS, 3.0 mm wall, MT-11010 \u00b7 Lab White #ECEEF2",
   "objects": [
    "Top_Saddle"
@@ -888,7 +888,7 @@
  {
   "title": "Lift handhold",
   "group": "Enclosure",
-  "desc": "Finger recess moulded up into the base band's underside roll, sized for four fingers: hands slide under the R24 edge and hook in, away from the door and screen.",
+  "desc": "Finger recess molded up into the base band's underside roll, sized for four fingers: hands slide under the R24 edge and hook in, away from the door and screen.",
   "spec": "PC/ABS, 2.0 mm, MT-11020 \u00b7 Graphite #141518",
   "objects": [
    "Lift_pocket_L",
@@ -898,7 +898,7 @@
  {
   "title": "Side accent inlay",
   "group": "Enclosure",
-  "desc": "Navy inlay insert-moulded into the side panel; the colour break marks the grip zone above the finger recess.",
+  "desc": "Navy inlay insert-molded into the side panel; the colour break marks the grip zone above the finger recess.",
   "spec": "PC, 1.0 mm, SPI-B1 \u00b7 Petricor Navy #191C55",
   "objects": [
    "Accent_L",

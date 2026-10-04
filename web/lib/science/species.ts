@@ -112,7 +112,7 @@ export interface Species {
   gbifKey: number
   family: string
   order: string
-  kind: 'mould' | 'yeast'
+  kind: 'mold' | 'yeast'
   growth: GrowthParams
   morph: Morphology
   confusedWith: string[]
@@ -127,7 +127,7 @@ const LAG_DEMO = (v: number): Param => ({ value: v, provenance: 'demo', rule: 'L
 export const SPECIES: Species[] = [
   {
     key: 'aspergillus_niger', name: 'Aspergillus niger', authority: 'Tiegh.', gbifKey: 3465658,
-    family: 'Aspergillaceae', order: 'Eurotiales', kind: 'mould',
+    family: 'Aspergillaceae', order: 'Eurotiales', kind: 'mold',
     growth: {
       Tmin: lit(10.13, 'gougouli2010'), Topt: lit(31.44, 'gougouli2010'), Tmax: lit(43.13, 'gougouli2010'),
       muOpt: lit(0.84, 'gougouli2010'), lagOpt: LAG_DEMO(14),
@@ -140,7 +140,7 @@ export const SPECIES: Species[] = [
   },
   {
     key: 'penicillium_expansum', name: 'Penicillium expansum', authority: 'Link', gbifKey: 2597789,
-    family: 'Aspergillaceae', order: 'Eurotiales', kind: 'mould',
+    family: 'Aspergillaceae', order: 'Eurotiales', kind: 'mold',
     growth: {
       Tmin: lit(-5.74, 'gougouli2010'), Topt: lit(22.08, 'gougouli2010'), Tmax: lit(30.97, 'gougouli2010'),
       muOpt: lit(0.221, 'gougouli2010'), lagOpt: LAG_DEMO(20),
@@ -153,7 +153,7 @@ export const SPECIES: Species[] = [
   },
   {
     key: 'aspergillus_flavus', name: 'Aspergillus flavus', authority: 'Link', gbifKey: 5259820,
-    family: 'Aspergillaceae', order: 'Eurotiales', kind: 'mould',
+    family: 'Aspergillaceae', order: 'Eurotiales', kind: 'mold',
     growth: {
       Tmin: der(13.5, 'yogendrarajah2016', 'Midpoint of reported 11–16 °C'),
       Topt: der(31.5, 'yogendrarajah2016', 'Midpoint of reported 30–33 °C'),
@@ -169,7 +169,7 @@ export const SPECIES: Species[] = [
   },
   {
     key: 'aspergillus_fumigatus', name: 'Aspergillus fumigatus', authority: 'Fresen.', gbifKey: 5260010,
-    family: 'Aspergillaceae', order: 'Eurotiales', kind: 'mould',
+    family: 'Aspergillaceae', order: 'Eurotiales', kind: 'mold',
     growth: { Tmin: demo(12), Topt: demo(37), Tmax: demo(52), muOpt: demo(0.25), lagOpt: LAG_DEMO(12) },
     morph: { style: 'velvet', margin: '#f2f2eb', body: '#578075', center: '#4d5e5c', accent: '#6f8d85', reverse: '#e8e2d0',
       zones: { margin: .07, fringe: .05, zon: .06, furrows: [0, 0], wrinkle: .10, gran: .25, h0: .5, profile: 'plateau', gloss: .07, fuzz: .04, fuzzLen: .4, heads: 0, pigment: null, drops: 0 },
@@ -179,7 +179,7 @@ export const SPECIES: Species[] = [
   },
   {
     key: 'penicillium_chrysogenum', name: 'Penicillium chrysogenum', authority: 'Thom', gbifKey: 3466349,
-    family: 'Aspergillaceae', order: 'Eurotiales', kind: 'mould',
+    family: 'Aspergillaceae', order: 'Eurotiales', kind: 'mold',
     growth: { Tmin: demo(4), Topt: demo(24), Tmax: demo(33), muOpt: demo(0.18), lagOpt: LAG_DEMO(22) },
     morph: { style: 'furrowed', margin: '#f7f7f2', body: '#3d8075', center: '#456963', accent: '#f5c738', reverse: '#f5cc38',
       zones: { margin: .14, fringe: .05, zon: .16, furrows: [11, .45], wrinkle: .25, gran: .15, h0: 1.0, profile: 'umbo', gloss: .1, fuzz: .04, fuzzLen: .4, heads: 0, pigment: [.40, 9.7], drops: 22 },
@@ -189,7 +189,7 @@ export const SPECIES: Species[] = [
   },
   {
     key: 'cladosporium_cladosporioides', name: 'Cladosporium cladosporioides', authority: '(Fresen.) G.A.de Vries', gbifKey: 2620657,
-    family: 'Cladosporiaceae', order: 'Capnodiales', kind: 'mould',
+    family: 'Cladosporiaceae', order: 'Capnodiales', kind: 'mold',
     growth: { Tmin: demo(0), Topt: demo(24), Tmax: demo(32), muOpt: demo(0.07), lagOpt: LAG_DEMO(30) },
     morph: { style: 'velvet', margin: '#707859', body: '#454a33', center: '#26281c', accent: '#3a4029', reverse: '#24291c',
       zones: { margin: .04, fringe: .03, zon: .05, furrows: [8, .35], wrinkle: .7, gran: .12, h0: 1.3, profile: 'dome', gloss: .1, fuzz: .08, fuzzLen: .4, heads: 0, pigment: [.50, 2.6], drops: 0 },
@@ -199,7 +199,7 @@ export const SPECIES: Species[] = [
   },
   {
     key: 'alternaria_alternata', name: 'Alternaria alternata', authority: '(Fr.) Keissl.', gbifKey: 2616163,
-    family: 'Pleosporaceae', order: 'Pleosporales', kind: 'mould',
+    family: 'Pleosporaceae', order: 'Pleosporales', kind: 'mold',
     growth: { Tmin: demo(3), Topt: demo(26), Tmax: demo(36), muOpt: demo(0.2), lagOpt: LAG_DEMO(16) },
     morph: { style: 'woolly', margin: '#b3b3a8', body: '#52544a', center: '#1f211c', accent: '#6f7264', reverse: '#2b2e26',
       zones: { margin: .18, fringe: .06, zon: .13, furrows: [0, 0], wrinkle: .15, gran: .1, h0: 1.3, profile: 'dome', gloss: .07, fuzz: .6, fuzzLen: 1.4, heads: 0, pigment: [.55, 3.5], drops: 0 },
@@ -209,7 +209,7 @@ export const SPECIES: Species[] = [
   },
   {
     key: 'fusarium_oxysporum', name: 'Fusarium oxysporum', authority: 'Schltdl.', gbifKey: 5251961,
-    family: 'Nectriaceae', order: 'Hypocreales', kind: 'mould',
+    family: 'Nectriaceae', order: 'Hypocreales', kind: 'mold',
     growth: { Tmin: demo(5), Topt: demo(27), Tmax: demo(36), muOpt: demo(0.35), lagOpt: LAG_DEMO(12) },
     morph: { style: 'floccose', margin: '#faf5f7', body: '#f0d6e8', center: '#cc94c2', accent: '#fff8fb', reverse: '#994d94',
       zones: { margin: .45, fringe: .10, zon: .05, furrows: [0, 0], wrinkle: 0, gran: 0, h0: 1.6, profile: 'dome', gloss: .05, fuzz: 1, fuzzLen: 3.2, heads: 0, pigment: [.45, 12.3], drops: 0 },
@@ -219,7 +219,7 @@ export const SPECIES: Species[] = [
   },
   {
     key: 'rhizopus_stolonifer', name: 'Rhizopus stolonifer', authority: '(Ehrenb.) Vuill.', gbifKey: 2558944,
-    family: 'Rhizopodaceae', order: 'Mucorales', kind: 'mould',
+    family: 'Rhizopodaceae', order: 'Mucorales', kind: 'mold',
     growth: { Tmin: demo(5), Topt: demo(26), Tmax: demo(33), muOpt: demo(1.2), lagOpt: LAG_DEMO(8) },
     morph: { style: 'cottony', margin: '#ebebe6', body: '#d6d6d1', center: '#bdbdb8', accent: '#141414', reverse: '#f2eee0',
       zones: { margin: .6, fringe: .12, zon: 0, furrows: [0, 0], wrinkle: 0, gran: 0, h0: 1.2, profile: 'plateau', gloss: .05, fuzz: 1, fuzzLen: 6, heads: .5, pigment: null, drops: 0 },

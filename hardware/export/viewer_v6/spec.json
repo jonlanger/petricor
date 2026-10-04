@@ -3,7 +3,7 @@
  "parts": [
   {
    "part": "Base_band",
-   "process": "Injection moulded (pull \u2212Z)",
+   "process": "Injection molded (pull \u2212Z)",
    "material": "PC/ABS, 3.0 mm wall, MT-11010 \u00b7 Lab White #ECEEF2",
    "cmf": "PC/ABS, 3.0 mm wall, MT-11010 \u00b7 Lab White #ECEEF2",
    "bbox_mm": [
@@ -53,7 +53,7 @@
   },
   {
    "part": "Side_panel_L",
-   "process": "Injection moulded (family tool, pull \u00b1X)",
+   "process": "Injection molded (family tool, pull \u00b1X)",
    "material": "PC/ABS, 3.0 mm wall, MT-11010 \u00b7 Lab White #ECEEF2",
    "cmf": "PC/ABS, 3.0 mm wall, MT-11010 \u00b7 Lab White #ECEEF2",
    "bbox_mm": [
@@ -103,7 +103,7 @@
   },
   {
    "part": "Side_panel_R",
-   "process": "Injection moulded (family tool, pull \u00b1X)",
+   "process": "Injection molded (family tool, pull \u00b1X)",
    "material": "PC/ABS, 3.0 mm wall, MT-11010 \u00b7 Lab White #ECEEF2",
    "cmf": "PC/ABS, 3.0 mm wall, MT-11010 \u00b7 Lab White #ECEEF2",
    "bbox_mm": [
@@ -153,7 +153,7 @@
   },
   {
    "part": "Top_saddle",
-   "process": "Injection moulded (pull on Y+Z diagonal)",
+   "process": "Injection molded (pull on Y+Z diagonal)",
    "material": "PC/ABS, 3.0 mm wall, MT-11010 \u00b7 Lab White #ECEEF2",
    "cmf": "PC/ABS, 3.0 mm wall, MT-11010 \u00b7 Lab White #ECEEF2",
    "bbox_mm": [
@@ -164,7 +164,7 @@
    "volume_cm3": 646.97,
    "mass_g": 744.0,
    "manifold": true,
-   "notes": "Top and back in one L-shaped moulding pulled on the 45\u00b0 diagonal so both faces draft. Step lips run under both reveals; ribs stiffen the 430 mm span; two rear bosses take the screws from below.",
+   "notes": "Top and back in one L-shaped molding pulled on the 45\u00b0 diagonal so both faces draft. Step lips run under both reveals; ribs stiffen the 430 mm span; two rear bosses take the screws from below.",
    "group": "Enclosure",
    "wall": {
     "part": "Top_saddle",
@@ -203,7 +203,7 @@
   },
   {
    "part": "Lift_handhold_L",
-   "process": "Injection moulded",
+   "process": "Injection molded",
    "material": "PC/ABS, 2.0 mm, MT-11020 \u00b7 Graphite #141518",
    "cmf": "PC/ABS, 2.0 mm, MT-11020 \u00b7 Graphite #141518",
    "bbox_mm": [
@@ -214,7 +214,7 @@
    "volume_cm3": 14.86,
    "mass_g": 17.1,
    "manifold": true,
-   "notes": "Finger recess moulded up into the base band's underside roll, sized for four fingers: hands slide under the R24 edge and hook in, away from the door and screen.",
+   "notes": "Finger recess molded up into the base band's underside roll, sized for four fingers: hands slide under the R24 edge and hook in, away from the door and screen.",
    "group": "Enclosure",
    "wall": {
     "part": "Lift_handhold_L",
@@ -253,7 +253,7 @@
   },
   {
    "part": "Lift_handhold_R",
-   "process": "Injection moulded",
+   "process": "Injection molded",
    "material": "PC/ABS, 2.0 mm, MT-11020 \u00b7 Graphite #141518",
    "cmf": "PC/ABS, 2.0 mm, MT-11020 \u00b7 Graphite #141518",
    "bbox_mm": [
@@ -264,7 +264,7 @@
    "volume_cm3": 14.86,
    "mass_g": 17.1,
    "manifold": true,
-   "notes": "Finger recess moulded up into the base band's underside roll, sized for four fingers: hands slide under the R24 edge and hook in, away from the door and screen.",
+   "notes": "Finger recess molded up into the base band's underside roll, sized for four fingers: hands slide under the R24 edge and hook in, away from the door and screen.",
    "group": "Enclosure",
    "wall": {
     "part": "Lift_handhold_R",
@@ -303,7 +303,7 @@
   },
   {
    "part": "Side_accent_inlay_L",
-   "process": "Injection moulded",
+   "process": "Injection molded",
    "material": "PC, 1.0 mm, SPI-B1 \u00b7 Petricor Navy #191C55",
    "cmf": "PC, 1.0 mm, SPI-B1 \u00b7 Petricor Navy #191C55",
    "bbox_mm": [
@@ -314,7 +314,7 @@
    "volume_cm3": 31.18,
    "mass_g": 37.4,
    "manifold": true,
-   "notes": "Navy inlay insert-moulded into the side panel; the colour break marks the grip zone above the finger recess.",
+   "notes": "Navy inlay insert-molded into the side panel; the colour break marks the grip zone above the finger recess.",
    "group": "Enclosure",
    "wall": {
     "part": "Side_accent_inlay_L",
@@ -353,7 +353,7 @@
   },
   {
    "part": "Side_accent_inlay_R",
-   "process": "Injection moulded",
+   "process": "Injection molded",
    "material": "PC, 1.0 mm, SPI-B1 \u00b7 Petricor Navy #191C55",
    "cmf": "PC, 1.0 mm, SPI-B1 \u00b7 Petricor Navy #191C55",
    "bbox_mm": [
@@ -364,7 +364,7 @@
    "volume_cm3": 27.5,
    "mass_g": 33.0,
    "manifold": true,
-   "notes": "Navy inlay insert-moulded into the side panel; the colour break marks the grip zone above the finger recess.",
+   "notes": "Navy inlay insert-molded into the side panel; the colour break marks the grip zone above the finger recess.",
    "group": "Enclosure",
    "wall": {
     "part": "Side_accent_inlay_R",
@@ -403,7 +403,7 @@
   },
   {
    "part": "Gull_wing_door_frame",
-   "process": "Injection moulded",
+   "process": "Injection molded",
    "material": "",
    "cmf": "",
    "bbox_mm": [
@@ -549,7 +549,7 @@
   },
   {
    "part": "Front_console",
-   "process": "Injection moulded",
+   "process": "Injection molded",
    "material": "PC/ABS, 3.0 mm wall, MT-11020 \u00b7 Graphite #141518",
    "cmf": "PC/ABS, 3.0 mm wall, MT-11020 \u00b7 Graphite #141518",
    "bbox_mm": [
@@ -738,7 +738,7 @@
    "volume_cm3": 85.39,
    "mass_g": 98.2,
    "manifold": true,
-   "notes": "Moulded trim closing the chamber to the cover. Its R28.5 corner is concentric with the door's R34 hood, so the gap and gasket stay constant all the way round.",
+   "notes": "Molded trim closing the chamber to the cover. Its R28.5 corner is concentric with the door's R34 hood, so the gap and gasket stay constant all the way round.",
    "group": "Chamber"
   },
   {
@@ -808,8 +808,8 @@
   {
    "part": "Insulation_panel_L",
    "process": "",
-   "material": "EPP 45 g/L moulded bead foam, dimpled outer face (\u00d810 \u00d7 2.5 on 13 hex)",
-   "cmf": "EPP 45 g/L moulded bead foam, dimpled outer face (\u00d810 \u00d7 2.5 on 13 hex)",
+   "material": "EPP 45 g/L molded bead foam, dimpled outer face (\u00d810 \u00d7 2.5 on 13 hex)",
+   "cmf": "EPP 45 g/L molded bead foam, dimpled outer face (\u00d810 \u00d7 2.5 on 13 hex)",
    "bbox_mm": [
     44.0,
     324.0,
@@ -818,14 +818,14 @@
    "volume_cm3": 3381.6,
    "mass_g": 152.2,
    "manifold": true,
-   "notes": "Moulded EPP bead foam that follows the rounded shell, so the thickened side walls are insulated right into the corners. The outboard face is dimpled: the dimples hold a still-air layer against the cover and act as crush points that take up cover tolerance. The smooth face seats on the liner.",
+   "notes": "Molded EPP bead foam that follows the rounded shell, so the thickened side walls are insulated right into the corners. The outboard face is dimpled: the dimples hold a still-air layer against the cover and act as crush points that take up cover tolerance. The smooth face seats on the liner.",
    "group": "Chamber"
   },
   {
    "part": "Insulation_panel_R",
    "process": "",
-   "material": "EPP 45 g/L moulded bead foam, dimpled outer face (\u00d810 \u00d7 2.5 on 13 hex)",
-   "cmf": "EPP 45 g/L moulded bead foam, dimpled outer face (\u00d810 \u00d7 2.5 on 13 hex)",
+   "material": "EPP 45 g/L molded bead foam, dimpled outer face (\u00d810 \u00d7 2.5 on 13 hex)",
+   "cmf": "EPP 45 g/L molded bead foam, dimpled outer face (\u00d810 \u00d7 2.5 on 13 hex)",
    "bbox_mm": [
     44.0,
     324.0,
@@ -834,14 +834,14 @@
    "volume_cm3": 3381.6,
    "mass_g": 152.2,
    "manifold": true,
-   "notes": "Moulded EPP bead foam that follows the rounded shell, so the thickened side walls are insulated right into the corners. The outboard face is dimpled: the dimples hold a still-air layer against the cover and act as crush points that take up cover tolerance. The smooth face seats on the liner.",
+   "notes": "Molded EPP bead foam that follows the rounded shell, so the thickened side walls are insulated right into the corners. The outboard face is dimpled: the dimples hold a still-air layer against the cover and act as crush points that take up cover tolerance. The smooth face seats on the liner.",
    "group": "Chamber"
   },
   {
    "part": "Insulation_panel_2",
    "process": "",
-   "material": "EPP 45 g/L moulded bead foam, dimpled outer face (\u00d810 \u00d7 2.5 on 13 hex)",
-   "cmf": "EPP 45 g/L moulded bead foam, dimpled outer face (\u00d810 \u00d7 2.5 on 13 hex)",
+   "material": "EPP 45 g/L molded bead foam, dimpled outer face (\u00d810 \u00d7 2.5 on 13 hex)",
+   "cmf": "EPP 45 g/L molded bead foam, dimpled outer face (\u00d810 \u00d7 2.5 on 13 hex)",
    "bbox_mm": [
     486.0,
     26.0,
@@ -866,14 +866,14 @@
    "volume_cm3": 230.62,
    "mass_g": 34.6,
    "manifold": true,
-   "notes": "Only 3.5 mm between the liner and the saddle ribs \u2014 too thin to mould in EPP, so the top uses a silica-aerogel blanket bonded to the liner.",
+   "notes": "Only 3.5 mm between the liner and the saddle ribs \u2014 too thin to mold in EPP, so the top uses a silica-aerogel blanket bonded to the liner.",
    "group": "Chamber"
   },
   {
    "part": "Insulation_panel_3",
    "process": "",
-   "material": "EPP 45 g/L moulded bead foam, dimpled outer face (\u00d810 \u00d7 2.5 on 13 hex)",
-   "cmf": "EPP 45 g/L moulded bead foam, dimpled outer face (\u00d810 \u00d7 2.5 on 13 hex)",
+   "material": "EPP 45 g/L molded bead foam, dimpled outer face (\u00d810 \u00d7 2.5 on 13 hex)",
+   "cmf": "EPP 45 g/L molded bead foam, dimpled outer face (\u00d810 \u00d7 2.5 on 13 hex)",
    "bbox_mm": [
     486.0,
     320.0,
@@ -1991,7 +1991,7 @@
   },
   {
    "part": "Printer_door",
-   "process": "Injection moulded",
+   "process": "Injection molded",
    "material": "PC/ABS, MT-11020",
    "cmf": "PC/ABS, MT-11020",
    "bbox_mm": [
@@ -2260,7 +2260,7 @@
    "volume_cm3": 1.37,
    "mass_g": 10.9,
    "manifold": true,
-   "notes": "M3.5 \u00d7 16 thread-forming screw (PT-style) from under the base into a moulded boss; heads sit on the underside, never on an A-surface. Confirm pilot and boss OD with the screw maker.",
+   "notes": "M3.5 \u00d7 16 thread-forming screw (PT-style) from under the base into a molded boss; heads sit on the underside, never on an A-surface. Confirm pilot and boss OD with the screw maker.",
    "group": "Base"
   },
   {

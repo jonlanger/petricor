@@ -54,7 +54,7 @@ BAND_Z = 40         # horizontal break between base band and upper panels = the 
 R_CONSOLE = 30
 REAR_DZ = BAND_Z - 28  # rear grille / I/O / hatch ride up with the band break
 R_DETAIL = 8        # foot of the lip, base, windows, hatches
-R_BREAK = 1.0       # edge break on every moulded edge
+R_BREAK = 1.0       # edge break on every molded edge
 WALL = 3.0          # PC/ABS nominal for a large cover (upper end of the PC/ABS range; confirm with molder)
 GAP_DOOR = 1.5      # moving door: constant all round
 REVEAL = 0.8        # fixed part breaks (dressed shadow line over a step lip)
@@ -156,7 +156,7 @@ boolean(cover, extrude_yz('cut', ACCENT, W - 1, W + 5))
 # rear reservoir hatch opening
 hcut = box('cut', (100, 20, 88), (-168, 248, 76 + REAR_DZ)); bevel(hcut, 6, 4, angle=80, harden=False); apply_mods(hcut)
 boolean(cover, hcut)
-# lift handholds: finger recesses moulded up into the band's underside roll — hands slide under the R24 and hook in
+# lift handholds: finger recesses molded up into the band's underside roll — hands slide under the R24 and hook in
 HH = rrect(160, 56, R_DETAIL, 50, -8)         # (y, z) outline: y −30…130, open at the rim, up to z 20 (band stays a closed ring)
 for sx in (-1, 1):
     boolean(cover, loft_yz_draft('cut', HH, sx * (W - 14), sx * (W + 10), DRAFT_POCKET))
@@ -208,7 +208,7 @@ side_R = part_slab(cover, 'Side_Panel_R', SPLIT_X + REVEAL / 2, 300)
 saddle = part_slab(cover, 'Top_Saddle', -SPLIT_X + REVEAL / 2, SPLIT_X - REVEAL / 2)
 bpy.data.objects.remove(cover)
 
-# step lip under each reveal, moulded on the saddle: blocks light and dust, lets the parts self-locate
+# step lip under each reveal, molded on the saddle: blocks light and dust, lets the parts self-locate
 lip = envelope('Saddle_lip', WALL, W - WALL)
 boolean(lip, envelope('cut', WALL + LIP_T, W - WALL - LIP_T))
 for c_ in (box('cut', (2 * D_HALF, 380, 330), (0, -132, 364)), box('cut', (2 * D_HALF, 220, 196), (0, -210, 104)), box('cut', (700, 900, 100), (0, 0, BAND_Z + LIP_W_BAND + 0.5 - 50))):
@@ -251,7 +251,7 @@ for sx, o in ((-1, side_L), (1, side_R)):
     tag(o, 'Enclosure', 'Side panel', 'Mirrored pair from one family tool, pulled along X. Carries the full side profile and the R32 roll; '
         'the parting line sits on the roll tangent and meets the saddle in a 0.8 mm reveal. Two M3.5 thread-forming screws into gusseted '
         'bosses from under the base — no visible fasteners.', (sx * 110, 0, 420), PANEL_SPEC)
-    o['pc_process'] = 'Injection moulded (family tool, pull ±X)'
+    o['pc_process'] = 'Injection molded (family tool, pull ±X)'
 # base band: step lip rising behind the upper parts all round (self-locates them, blocks light at the horizontal reveal)
 blip = envelope('Band_lip', WALL, W - WALL)
 boolean(blip, envelope('cut', WALL + LIP_T, W - WALL - LIP_T))
@@ -263,10 +263,10 @@ tag(band, 'Enclosure', 'Base band', 'One-piece ring carrying the R24 roll under 
     'stopping at the bench and fingers find an edge to lift by. Pulled straight down (no undercut); its horizontal 0.8 mm reveal at '
     'z 40 continues the console\'s lower edge all the way round. A 4 mm step lip rises behind the upper parts; retained by six snap hooks '
     'onto the tray edge (not modelled).', (0, 0, -330), PANEL_SPEC)
-band['pc_process'] = 'Injection moulded (pull −Z)'
-tag(saddle, 'Enclosure', 'Top saddle', 'Top and back in one L-shaped moulding pulled on the 45° diagonal so both faces draft. Step lips run '
+band['pc_process'] = 'Injection molded (pull −Z)'
+tag(saddle, 'Enclosure', 'Top saddle', 'Top and back in one L-shaped molding pulled on the 45° diagonal so both faces draft. Step lips run '
     'under both reveals; ribs stiffen the 430 mm span; two rear bosses take the screws from below.', (0, 0, 420), PANEL_SPEC)
-saddle['pc_process'] = 'Injection moulded (pull on Y+Z diagonal)'
+saddle['pc_process'] = 'Injection molded (pull on Y+Z diagonal)'
 
 # handhold liners close the pockets (graphite, matches the console family)
 for sx in (-1, 1):
@@ -276,7 +276,7 @@ for sx in (-1, 1):
     boolean(liner_, envelope('cut', WALL, W - WALL), op='INTERSECT')   # sits inside the band's roll
     liner_.data.materials.append(M['graphite_matte'])
     bevel(liner_, R_BREAK, 2)
-    tag(liner_, 'Enclosure', 'Lift handhold', 'Finger recess moulded up into the base band\'s underside roll, sized for four fingers: hands '
+    tag(liner_, 'Enclosure', 'Lift handhold', 'Finger recess molded up into the base band\'s underside roll, sized for four fingers: hands '
         'slide under the R24 edge and hook in, away from the door and screen.', (sx * 60, 0, -330), 'PC/ABS, 2.0 mm, MT-11020 · Graphite #141518')
 
 for sx in (-1, 1):
@@ -284,7 +284,7 @@ for sx in (-1, 1):
     boolean(acc, loft_yz_draft('cut', SCAN_WIN, W - 15, W + 10, DRAFT_WINDOW)) if sx > 0 else None
     acc.data.materials.append(M['navy'])
     bevel(acc, 0.6, 2)
-    tag(acc, 'Enclosure', 'Side accent inlay', 'Navy inlay insert-moulded into the side panel; the colour break marks the grip zone above the finger recess.',
+    tag(acc, 'Enclosure', 'Side accent inlay', 'Navy inlay insert-molded into the side panel; the colour break marks the grip zone above the finger recess.',
         (sx * 90, 0, 420), 'PC, 1.0 mm, SPI-B1 · Petricor Navy #191C55')
 
 # ----------------------------------------------------------------- base chassis
@@ -299,7 +299,7 @@ BX_ = BOSS_X
 for i, (fx, fy) in enumerate([(-BX_, -150), (-BX_, 175), (BX_, -150), (BX_, 175), (-70, RB_Y), (70, RB_Y)]):
     sc_ = join([cyl(f'Fastener_{i}', 1.75, 16, (fx, fy, TRAY_Z), C['Base'], M['steel'], verts=16),
                 cyl(f'Fastener_{i}_head', 3.4, 2.2, (fx, fy, TRAY_Z - 9.1), C['Base'], M['steel'], verts=24)], f'Fastener_{i}')
-    tag(sc_, 'Base', 'Thread-forming screw', 'M3.5 × 16 thread-forming screw (PT-style) from under the base into a moulded boss; '
+    tag(sc_, 'Base', 'Thread-forming screw', 'M3.5 × 16 thread-forming screw (PT-style) from under the base into a molded boss; '
         'heads sit on the underside, never on an A-surface. Confirm pilot and boss OD with the screw maker.', (0, 0, -380), 'M3.5 × 16 PT, pilot Ø2.9')
 deck = extrude_xy('Deck_plate', rrect(462, 350, 10, 0, 68), 126, 128, C['Base'])
 boolean(deck, cyl('cut', 14, 10, (0, 52, 127)))
@@ -534,7 +534,7 @@ for bp in gasket.data.splines[0].bezier_points:
     bp.handle_left_type = bp.handle_right_type = 'VECTOR'
 tag(gasket, 'Chamber', 'Door gasket', 'Food-grade silicone D-profile seal.', (0, -40, 140))
 
-# chamber front trim — one curved moulding concentric with the door (R28.5 outer = door inner R30 − 1.5 gap), wide enough
+# chamber front trim — one curved molding concentric with the door (R28.5 outer = door inner R30 − 1.5 gap), wide enough
 # to tuck under the side panels so no foam shows through the reveal
 TR = R_HOOD - 4.0 - GAP_DOOR
 t_arc = [(HOOD_C[0] + TR * math.cos(math.radians(a)), HOOD_C[1] + TR * math.sin(math.radians(a))) for a in range(90, 181, 5)]
@@ -543,7 +543,7 @@ boolean(trim, box('cut', (382, 154, 30), (0, -35, 394)))
 boolean(trim, box('cut', (382, 20, 200), (0, -111, 307)))
 trim.data.materials.clear(); trim.data.materials.append(M['shell'])
 bevel(trim, 0.8, 2)
-tag(trim, 'Chamber', 'Chamber trim', 'Moulded trim closing the chamber to the cover. Its R28.5 corner is concentric with the door\'s R34 hood, so the gap and gasket stay constant all the way round.', (0, 0, 110))
+tag(trim, 'Chamber', 'Chamber trim', 'Molded trim closing the chamber to the cover. Its R28.5 corner is concentric with the door\'s R34 hood, so the gap and gasket stay constant all the way round.', (0, 0, 110))
 clb = box('Chamber_lightbar', (300, 8, 3), (0, 30, 384.5), C['Chamber'], M['white_glow'], bev=0.8)
 tag(clb, 'Chamber', 'Chamber light', 'Dimmable white LED bar for viewing dishes through the door; switched off automatically during imaging.', (0, 0, 140))
 # sensors
@@ -561,10 +561,10 @@ for i in range(8):
     led = box(f'UVC_led_{i}', (5, 5, 1.2), (-84 + i * 24, 60, 381.6), C['Chamber'], M['uvc_glow'])
     tag(led, 'Chamber', 'UV-C decontamination bar', '', (0, 0, 240))
 
-# insulation: moulded EPP (expanded polypropylene) bead foam, not cut PIR board — a moulded part can follow the R44 roll and
+# insulation: molded EPP (expanded polypropylene) bead foam, not cut PIR board — a molded part can follow the R44 roll and
 # the R72 shoulder, so the thickened side walls are filled right into the corners. Dimpled on the outboard face only
 # (the smooth face seats flat on the liner): the dimples trap still air against the cover, act as crush points that take up
-# cover tolerance, and cut mass ~15 %. Ø10 × 2.5 mm hemispherical dimples on a 13 mm hex pitch, moulded by the EPP tool.
+# cover tolerance, and cut mass ~15 %. Ø10 × 2.5 mm hemispherical dimples on a 13 mm hex pitch, molded by the EPP tool.
 INS_GAP = WALL + LIP_T + 0.5          # clear of the cover wall and the step lip under the reveal
 DIMPLE_D, DIMPLE_DEPTH, DIMPLE_PITCH = 10.0, 2.5, 13.0
 
@@ -598,8 +598,8 @@ def dimples(ob, axis, face, u_rng, v_rng, keep=lambda u, v: True):
     return ob
 
 
-FOAM_SPEC = 'EPP 45 g/L moulded bead foam, dimpled outer face (Ø10 × 2.5 on 13 hex)'
-FOAM_DESC = ('Moulded EPP bead foam that follows the rounded shell, so the thickened side walls are insulated right into the '
+FOAM_SPEC = 'EPP 45 g/L molded bead foam, dimpled outer face (Ø10 × 2.5 on 13 hex)'
+FOAM_DESC = ('Molded EPP bead foam that follows the rounded shell, so the thickened side walls are insulated right into the '
              'corners. The outboard face is dimpled: the dimples hold a still-air layer against the cover and act as crush '
              'points that take up cover tolerance. The smooth face seats on the liner.')
 SIDE_IN = 199                          # liner outer face + 1.8 mm
@@ -618,7 +618,7 @@ dimples(pb, 'y', 243, (-(SPLIT_X - 8), SPLIT_X - 8), (152, 340))
 pb.data.materials.append(M['foam']); smooth(pb, False)
 tag(pb, 'Chamber', 'Insulation panel', '', (0, 110, 60), FOAM_SPEC)
 pt = box('Insul_top', (440, 150, 3.5), (0, 122, 389.75), C['Chamber'], M['aerogel'], bev=0.8)
-tag(pt, 'Chamber', 'Insulation blanket', 'Only 3.5 mm between the liner and the saddle ribs — too thin to mould in EPP, so the top '
+tag(pt, 'Chamber', 'Insulation blanket', 'Only 3.5 mm between the liner and the saddle ribs — too thin to mold in EPP, so the top '
     'uses a silica-aerogel blanket bonded to the liner.', (0, 0, 380), '3.5 mm silica aerogel blanket, PET-faced')
 pbot = box('Insul_floor', (2 * W, 320, 18), (0, 70, 139), C['Chamber'])
 conform(pbot)

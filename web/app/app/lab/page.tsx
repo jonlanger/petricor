@@ -24,7 +24,7 @@ export default function Lab() {
                     // eslint-disable-next-line @next/next/no-img-element
                     ? <img src={`/lab/${s.key}.jpg`} alt={`3D mycelium of ${s.name}`} loading="lazy" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.04]" />
                     : <div className="grid h-full place-items-center font-mono text-[12px] text-white/40">3D preview</div>}
-                  <span className="absolute left-3 top-3 rounded-full bg-black/50 px-2.5 py-1 font-mono text-[11px] text-white/80 backdrop-blur">{s.kind === 'yeast' ? 'Yeast' : 'Mould'}</span>
+                  <span className="absolute left-3 top-3 rounded-full bg-black/50 px-2.5 py-1 font-mono text-[11px] text-white/80 backdrop-blur">{s.kind === 'yeast' ? 'Yeast' : 'Mold'}</span>
                 </div>
                 <div className="flex flex-1 flex-col p-5">
                   <div className="flex items-start justify-between gap-3">
