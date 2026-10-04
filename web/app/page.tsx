@@ -62,7 +62,7 @@ export default function Home() {
         <div className="relative mx-auto grid max-w-[1320px] lg:min-h-[calc(100svh-64px)] lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)]">
           <div className="relative z-10 flex flex-col justify-center px-5 pb-10 pt-16 sm:px-8 sm:pt-20 lg:py-24 lg:pr-10">
             <div className="animate-rise font-mono text-[12px] uppercase tracking-[0.14em] text-white/50">Petricor · culture imaging, end to end</div>
-            <h1 className="animate-rise mt-5 font-mono text-[15vw] font-semibold leading-[0.9] tracking-[-0.05em] sm:text-[88px] lg:text-[72px] xl:text-[84px]" style={{ animationDelay: '80ms' }}>
+            <h1 className="animate-rise mt-5 font-mono text-[15vw] font-semibold leading-[1.08] tracking-[-0.05em] sm:text-[88px] lg:text-[72px] xl:text-[84px]" style={{ animationDelay: '80ms' }}>
               Every dish,<br /><span className="text-[#7c84ff]">watched.</span>
             </h1>
             <p className="animate-rise mt-7 max-w-[480px] text-[18px] leading-relaxed text-white/70" style={{ animationDelay: '160ms' }}>
